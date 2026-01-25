@@ -5,7 +5,7 @@ Time complexity: O(n)
 Space complexity: O(1)
 */
 
-class LC125_ValidPalindrome {
+class LC125_ValidPalindrome{
     public boolean isPalindrome(String s) {
         int left = 0, right = s.length() - 1;
 
