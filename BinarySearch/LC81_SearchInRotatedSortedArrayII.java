@@ -9,7 +9,7 @@ public class LC81_SearchInRotatedSortedArrayII {
                 return true;
 
             // dulicates case
-            if (arr[si] == arr[mid] && arr[mid] == arr[ei]) {
+            if (arr[si]==arr[mid] && arr[mid] == arr[ei]) {
                 si++;
                 ei--;
                 continue;
