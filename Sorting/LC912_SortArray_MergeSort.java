@@ -1,3 +1,12 @@
+/*
+LeetCode 912 - Sort an Array
+Pattern: Divide and Conquer (Merge Sort)
+Approach: Recursively divide array and merge sorted halves
+Time Complexity: O(n log n)
+Space Complexity: O(n)
+*/
+
+
 class LC912_SortArray_MergeSort {
     public int[] sortArray(int[] nums) {
         mergesort(nums, 0, nums.length - 1);

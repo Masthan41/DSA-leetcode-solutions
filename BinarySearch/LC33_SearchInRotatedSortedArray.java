@@ -1,3 +1,12 @@
+/*
+LeetCode 33 - Search in Rotated Sorted Array
+Pattern: Binary Search Variant (Rotated Array)
+Approach: Identify sorted half and discard the other half
+Time Complexity: O(log n)
+Space Complexity: O(1)
+*/
+
+
 public class LC33_SearchInRotatedSortedArray {
     public int search(int[] arr, int tar) {
         int si = 0, ei = arr.length - 1;

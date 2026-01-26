@@ -1,3 +1,12 @@
+/*
+LeetCode 81 - Search in Rotated Sorted Array II
+Pattern: Binary Search Variant (Rotated Array with Duplicates)
+Approach: Shrink boundaries when duplicates block sorted-half detection
+Time Complexity: O(log n) average, O(n) worst
+Space Complexity: O(1)
+*/
+
+
 public class LC81_SearchInRotatedSortedArrayII {
     public boolean search(int[] arr, int tar) {
         int si = 0, ei = arr.length - 1;
