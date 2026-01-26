@@ -1,5 +1,5 @@
 # 🚀 LeetCode Solutions in Java
-This repository contains my curated solutions to LeetCode problems implemented in **Java** as part of my Data Structures & Algorithms preparation for technical interviews. The goal of this repo is not just to solve problems, but to understand and document the **patterns** behind them — such as recursion, backtracking, dynamic programming, and string/array manipulation.
+This repository contains my curated solutions to LeetCode problems implemented in **Java** as part of my Data Structures & Algorithms preparation for technical interviews. The goal of this repo is not just to solve problems, but to understand and document the **patterns** behind them such as recursion, backtracking, dynamic programming, and string/array manipulation.
 
 ## 📌 Topics Covered
 - Recursion
