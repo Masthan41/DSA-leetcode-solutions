@@ -6,6 +6,9 @@ Time Complexity: O(log n)
 Space Complexity: O(1)
 */
 
+/* The isBadVersion API is defined in the parent class VersionControl.
+      boolean isBadVersion(int version); */
+
 public class LC278_FirstBadVersion extends VersionControl {
     public int firstBadVersion(int n) {
         int low = 1, high = n;
