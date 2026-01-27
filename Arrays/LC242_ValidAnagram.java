@@ -7,7 +7,6 @@ Space Complexity: O(1)
 */
 
 import java.util.Arrays;
-import java.util.Scanner;
 
 class LC242_ValidAnagram {
     public static boolean isAnagram(String s1, String s2) {
@@ -22,12 +21,5 @@ class LC242_ValidAnagram {
         Arrays.sort(arr2);
 
         return Arrays.equals(arr1, arr2);
-    }
-
-    public static void main(String[] args) {
-        Scanner m = new Scanner(System.in);
-        String s1 = m.nextLine();
-        String s2 = m.nextLine();
-        System.out.println(isAnagram(s1, s2));
     }
 }
