@@ -55,7 +55,7 @@ class LC51_NQueens {
     private List<String> construct(char[][] board) {
         List<String> res = new ArrayList<>();
         for (int i = 0; i < board.length; i++) {
-            res.add(new String(board[i]));
+            res.add(new String(board [i] ));
         }
         return res;
     }
