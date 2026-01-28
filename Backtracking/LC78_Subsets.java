@@ -21,7 +21,7 @@ class LC78_Subsets {
             return;
         }
 
-        // Include
+        // Include in nums
         curr.add(nums[i]);
         backtrack(nums, i + 1, curr, result);
 
