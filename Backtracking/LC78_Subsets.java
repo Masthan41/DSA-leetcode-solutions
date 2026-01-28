@@ -28,7 +28,7 @@ class LC78_Subsets {
         // Backtrack
         curr.remove(curr.size() - 1);
 
-        // Exclude
+        // Exclude from nums
         backtrack(nums, i + 1, curr, result);
     }
 }
