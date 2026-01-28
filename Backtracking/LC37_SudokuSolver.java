@@ -1,7 +1,7 @@
 /*
 LeetCode 37 - Sudoku Solver
 Approach: Backtracking with constraint checking (row, column, 3x3 grid)
-Time Complexity: Exponential (pruned heavily by constraints)
+Time Complexity: O(9^(empty cells)) Exponential (pruned heavily by constraints)
 Space Complexity: O(1)
 */
 
