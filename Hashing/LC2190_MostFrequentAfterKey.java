@@ -5,7 +5,7 @@ Time Complexity: O(n)
 Space Complexity: O(n)
 */
 
-import java.util.HashMap;
+import java.util.*;
 
 class LC2190_MostFrequentAfterKey {
     public int mostFrequent(int[] nums, int key) {
