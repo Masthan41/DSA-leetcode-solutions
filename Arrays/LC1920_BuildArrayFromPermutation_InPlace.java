@@ -5,7 +5,7 @@ Time complexity: O(n)
 Space complexity: O(1)
 */
 
-class LC1920_BuildArrayFromPermutation_InPlace {
+public class LC1920_BuildArrayFromPermutation_InPlace {
     public int[] buildArray(int[] nums) {
         int n = nums.length;
 
@@ -14,7 +14,7 @@ class LC1920_BuildArrayFromPermutation_InPlace {
         }
 
         for (int i = 0; i < n; i++) {
-            nums[i] = nums[i] / n;
+            nums[i] = nums[i]/n;
         }
 
         return nums;
