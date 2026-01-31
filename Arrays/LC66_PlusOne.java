@@ -1,7 +1,7 @@
 /*
 LeetCode 66 - Plus One
 Approach: Traverse from right and handle carry
-Time Complexity: 
+Time Complexity: O(n)
 Space Complexity: 
 */
 
