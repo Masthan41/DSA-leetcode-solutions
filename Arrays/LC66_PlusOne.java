@@ -2,7 +2,7 @@
 LeetCode 66 - Plus One
 Approach: Traverse from right and handle carry
 Time Complexity: O(n)
-Space Complexity: 
+Space Complexity: O(n) (if new array is needed)
 */
 
 class LC66_PlusOne{
