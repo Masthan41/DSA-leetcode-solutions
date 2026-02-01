@@ -5,6 +5,8 @@ Time Complexity: O(log n)
 Space Complexity: O(1)
 */
 
+//Although the problem can be solved using Newton's method, here we use binary search for clarity.
+
 class LC69_SqrtX {
     public int mySqrt(int x) {
 
