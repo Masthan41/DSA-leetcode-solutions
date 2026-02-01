@@ -6,10 +6,10 @@ Space Complexity: O(1)
 */
 
 class LC69_SqrtX {
-
     public int mySqrt(int x) {
 
-        if (x < 2) return x;
+        if (x < 2)
+            return x;
 
         int left = 1, right = x / 2;
         int ans = 0;
@@ -20,7 +20,7 @@ class LC69_SqrtX {
             // Use division to avoid overflow
             if (mid <= x / mid) {
                 ans = mid;
-                left = mid + 1;  // try larger value
+                left = mid + 1; // try larger value
             } else {
                 right = mid - 1; // go smaller
             }
