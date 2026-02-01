@@ -1,7 +1,7 @@
 /*
 LeetCode 9 - Palindrome Number
 Approach: Reverse half of the number
-Time Complexity: O(log10 n)
+Time Complexity: O(log n)
 Space Complexity: O(1)
 */
 
