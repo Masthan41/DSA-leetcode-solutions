@@ -28,7 +28,7 @@ class ListNode {
 class LC234_PalindromeLinkedList {
 
     // find mid
-    public ListNode findMid(ListNode head) {
+    public ListNode findMid (ListNode head) {
         ListNode slow = head;
         ListNode fast = head;
 
