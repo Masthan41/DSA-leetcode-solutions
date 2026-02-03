@@ -9,6 +9,13 @@
  * }
  */
 
+/*
+Approach:
+Iteratively reverse pointers using three nodes: prev, curr, next.
+Time Complexity: O(n)
+Space Complexity: O(1)
+*/
+
 class ListNode {
     int val;
     ListNode next;
