@@ -2,7 +2,7 @@
 LeetCode 921 - Minimum Add to Make Parentheses Valid
 Approach: Greedy counting of unmatched brackets
 Time complexity: O(n)
-Space complexity: 
+Space complexity: O(1)
 */
 
 class LC921_MinAddToMakeValid {
