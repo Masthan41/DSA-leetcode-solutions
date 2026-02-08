@@ -8,7 +8,8 @@ Space complexity: O(n)
 import java.util.*;
 
 class LC20_ValidParentheses {
-    Stack<Character> st = new Stack<>();
+     public boolean isValid(String str) {
+        Stack<Character> st = new Stack<>();
 
         for (int i = 0; i < str.length(); i++) {
             char ch = str.charAt(i);
