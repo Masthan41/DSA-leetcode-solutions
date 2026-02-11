@@ -1,7 +1,8 @@
 /*
 LeetCode 12 - Integer to Roman
 Approach: Greedy subtraction from largest Roman values.
-Time Complexity: O()
+Time Complexity: O(1)
+//because atmost 15 appends since values are capped at 3999
 Space Complexity: O(1)
 */
 
