@@ -30,12 +30,4 @@ class LC3_LongestSubstringWithoutRepeatingCharacters {
 
         return maxLength;
     }
-
-    public static void main(String[] args) {
-        LC3_LongestSubstringWithoutRepeatingCharacters obj =
-                new LC3_LongestSubstringWithoutRepeatingCharacters();
-
-        String s = "abcabcbb";
-        System.out.println(obj.lengthOfLongestSubstring(s)); // Output: 3
-    }
 }
