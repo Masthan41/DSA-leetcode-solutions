@@ -1,3 +1,9 @@
+/* LeetCode 11 - Container With Most Water
+Approach: Two Pointers
+Time Complexity: O(n)
+Space Complexity: O(1)
+*/
+
 public class LC11_ContainerWithMostWater {
     public int maxArea(int[] height) {
         int l = 0, r = height.length - 1;
