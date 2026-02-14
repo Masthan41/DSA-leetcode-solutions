@@ -5,7 +5,9 @@ Time Complexity: O(n)
 Space Complexity: O(1)
 */
 
-
+/*You can use recursion with memoization or an iterative approach. Here, we will use an iterative approach to optimize space complexity.
+Recusrion costs you O(n^2) time complexity and O(n) space complexity, while the iterative approach costs you O(n) time complexity and O(1) space complexity.
+*/
 
 class LC70_ClimbingStairs {
     public int climbStairs(int n) {
