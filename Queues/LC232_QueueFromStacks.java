@@ -55,4 +55,12 @@ class LC232_QueueFromStacks {
     public boolean empty() {
         return input.isEmpty() && output.isEmpty();
     }
+    public static void main(String[] args) {
+        LC232_QueueFromStacks queue = new LC232_QueueFromStacks();
+        queue.push(1);
+        queue.push(2);
+        System.out.println(queue.peek());  // returns 1
+        System.out.println(queue.pop());   // returns 1
+        System.out.println(queue.empty()); // returns false
+    }
 }
