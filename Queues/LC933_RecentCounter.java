@@ -9,22 +9,18 @@ Space Complexity: O(n)
 import java.util.*;
 
 class LC933_RecentCounter {
-
-    Queue<Integer> q;
+Queue<Integer> q;
 
     public LC933_RecentCounter() {
         q = new LinkedList<>();
     }
-    
-    public int ping(int t) {
 
+    public int ping(int t) {
         q.add(t);
 
-        // remove calls older than t-3000
         while (!q.isEmpty() && q.peek() < t - 3000) {
             q.remove();
         }
-
         return q.size();
     }
     public static void main(String[] args) {
