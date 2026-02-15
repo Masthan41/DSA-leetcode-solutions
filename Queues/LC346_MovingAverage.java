@@ -1,5 +1,9 @@
 /*
+LeetCode 346 - Moving Average from Data Stream
+Approach: Queue sliding window
 
+Time Complexity: O(1)
+Space Complexity: O(size)
 */
 
 import java.util.*;
@@ -24,6 +28,7 @@ public class LC346_MovingAverage {
         }
         return sum / q.size();
     }
+
     public static void main(String[] args) {
         LC346_MovingAverage m = new LC346_MovingAverage(4);
         System.out.println(m.next(1)); // 1.0
