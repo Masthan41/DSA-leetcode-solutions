@@ -7,7 +7,7 @@ Space Complexity: O(1)
 */
 
 class LC509_FibonacciNumber {
-    public int fib(int n) {
+    public static int fib(int n) {
         if (n == 0)
             return 0;
         if (n == 1)
@@ -22,5 +22,9 @@ class LC509_FibonacciNumber {
         }
 
         return b;
+    }
+    public static void main(String[] args) {
+        int n = 10;
+        System.out.println(fib(n)); // 55
     }
 }
