@@ -1,3 +1,11 @@
+/*
+Leetcode 169 - Majority Element
+Approach - Boyer-Moore Voting Algorithm
+
+Time Complexity: O(n)
+Space Complexity: O(1)
+*/
+
 class LC169_MajorityElement {
     public int majorityElement(int[] nums) {
         int ans = nums[0];
