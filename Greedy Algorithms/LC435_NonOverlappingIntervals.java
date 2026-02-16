@@ -24,9 +24,10 @@ public class LC435_NonOverlappingIntervals {
         }
         return intervals.length - c;
     }
+
     public static void main(String[] args) {
         LC435_NonOverlappingIntervals s = new LC435_NonOverlappingIntervals();
-        int[][] intervals = {{1,2}, {2,3}, {3,4}, {1,3}};
+        int[][] intervals = { { 1, 2 }, { 2, 3 }, { 3, 4 }, { 1, 3 } };
         System.out.println(s.eraseOverlapIntervals(intervals)); // 1
     }
 }
