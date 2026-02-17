@@ -1,3 +1,10 @@
+/*
+Leetcode 3136 - Valid Word
+Approach - Check if the word has at least 3 characters, contains at least one vowel and one consonant, and consists of only letters and digits.
+Time Complexity - O(n)
+Space Complexity - O(1)
+*/
+
 public class LC3136_ValidWord {
     public boolean isValid(String word) {
 
