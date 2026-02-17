@@ -1,6 +1,11 @@
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.List;
+/*
+LeetCode 51 - N-Queens
+Approach - Backtracking
+Time Complexity - O(N!)
+Space Complexity - O(N^2) for the board
+*/
+
+import java.util.*;
 
 public class LC51_NQueens {
     public List<List<String>> solveNQueens(int n) {
