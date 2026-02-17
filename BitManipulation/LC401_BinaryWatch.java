@@ -3,7 +3,6 @@ LeetCode 401 - Binary Watch
 Approach: Brute force + Bit counting
 Time Complexity: O(12 × 60) = O(1)
 Space Complexity: O(1)
-Folder: Bit Manipulation
 */
 
 import java.util.*;
