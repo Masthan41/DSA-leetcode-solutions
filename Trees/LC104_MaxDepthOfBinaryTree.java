@@ -15,6 +15,7 @@ class LC104_MaxDepthOfBinaryTree {
 
         return Math.max(ld, rd) + 1;
     }
+
     public static void main(String[] args) {
         LC104_MaxDepthOfBinaryTree solution = new LC104_MaxDepthOfBinaryTree();
 
