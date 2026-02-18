@@ -7,7 +7,7 @@ Space Complexity: O(h)
 
 import java.util.*;
 
-class LC144_BinaryTreePreorderTraversal {
+class LC144_PreorderTraversal {
 
     public List<Integer> preorderTraversal(TreeNode root) {
 
@@ -30,7 +30,7 @@ class LC144_BinaryTreePreorderTraversal {
         preorder(root.right, result);
     }
     public static void main(String[] args) {
-        LC144_BinaryTreePreorderTraversal solution = new LC144_BinaryTreePreorderTraversal();
+        LC144_PreorderTraversal solution = new LC144_PreorderTraversal();
 
         TreeNode root = new TreeNode(1);
         root.right = new TreeNode(2);

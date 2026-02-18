@@ -7,7 +7,7 @@ Space Complexity: O(h)
 
 import java.util.*;
 
-class LC145_BinaryTreePostorderTraversal {
+class LC145_PostorderTraversal {
     public List<Integer> postorderTraversal(TreeNode root) {
 
         List<Integer> res = new ArrayList<>();
@@ -26,7 +26,7 @@ class LC145_BinaryTreePostorderTraversal {
         res.add(root.val);
     }
     public static void main(String[] args) {
-        LC145_BinaryTreePostorderTraversal solution = new LC145_BinaryTreePostorderTraversal();
+        LC145_PostorderTraversal solution = new LC145_PostorderTraversal();
 
         TreeNode root = new TreeNode(1);
         root.right = new TreeNode(2);

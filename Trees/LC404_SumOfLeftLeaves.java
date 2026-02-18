@@ -5,7 +5,7 @@ Time Complexity: O(n)
 Space Complexity: O(h)
 */
 
-public class LC404_SumOfLeftLeaves {
+class LC404_SumOfLeftLeaves {
     public int sumOfLeftLeaves(TreeNode root) {
 
         if (root == null) {

@@ -5,7 +5,7 @@ Time Complexity: O(n)
 Space Complexity: O(h)
 */
 
-public class LC543_DiameterOfBinaryTree {
+class LC543_DiameterOfBinaryTree {
     int diameter = 0;
 
     public int diameterOfBinaryTree(TreeNode root) {

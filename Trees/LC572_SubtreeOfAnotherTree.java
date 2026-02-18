@@ -5,7 +5,7 @@ Time Complexity: O(n × m)
 Space Complexity: O(h)
 */
 
-public class LC572_SubtreeOfAnotherTree {
+class LC572_SubtreeOfAnotherTree {
     public boolean isIdentical(TreeNode root, TreeNode subRoot) {
         if (root == null && subRoot == null) {
             return true;

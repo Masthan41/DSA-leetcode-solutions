@@ -7,7 +7,7 @@ Space Complexity: O(h) where h is the height of the tree
 
 import java.util.*;
 
-class LC94_BinaryTreeInorderTraversal {
+class LC94_InorderTraversal {
 
     public List<Integer> inorderTraversal(TreeNode root) {
 
@@ -29,7 +29,7 @@ class LC94_BinaryTreeInorderTraversal {
         inorder(root.right, result);
     }
     public static void main(String[] args){
-        LC94_BinaryTreeInorderTraversal solution = new LC94_BinaryTreeInorderTraversal();
+        LC94_InorderTraversal solution = new LC94_InorderTraversal();
 
         TreeNode root = new TreeNode(1);
         root.right = new TreeNode(2);
