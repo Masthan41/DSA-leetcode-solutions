@@ -16,6 +16,7 @@ class LC222_CountCompleteTreeNodes {
 
         return lc + rc + 1;
     }
+
     public static void main(String[] args) {
         LC222_CountCompleteTreeNodes solution = new LC222_CountCompleteTreeNodes();
 
