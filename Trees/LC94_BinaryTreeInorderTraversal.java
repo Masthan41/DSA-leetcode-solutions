@@ -2,7 +2,7 @@
 LeetCode 94 - Binary Tree Inorder Traversal
 Approach: Inorder traversal (Left → Root → Right)
 Time Complexity: O(n)
-Space Complexity: 
+Space Complexity: O(h) where h is the height of the tree
 */
 
 import java.util.*;
