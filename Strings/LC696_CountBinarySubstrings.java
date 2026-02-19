@@ -23,6 +23,7 @@ class LC696_CountBinarySubstrings {
         res += Math.min(prevCount, curr);
         return res;
     }
+
     public static void main(String[] args) {
         LC696_CountBinarySubstrings obj = new LC696_CountBinarySubstrings();
         System.out.println(obj.countBinarySubstrings("00110011")); // 6
