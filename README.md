@@ -8,6 +8,9 @@ This repository contains my curated solutions to LeetCode problems implemented i
 - Strings & Arrays
 - Two Pointers
 - Pattern-based problem solving
+- Trees
+- Graphs
+- Math problems
 
 ## 🗂️ Folder Structure
 LeetCode/ → Backtracking/ | DP/ | Strings/ | Arrays/  
