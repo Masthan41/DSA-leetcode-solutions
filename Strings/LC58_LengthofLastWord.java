@@ -1,7 +1,7 @@
 /*
 LeetCode 58 - Length of Last Word
 Approach: Traverse from end and count characters
-Time Complexity: O(n)
+Time Complexity: O(n) where n is the length of the string
 Space Complexity: O(1)
 */
 
