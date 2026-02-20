@@ -13,6 +13,7 @@ class LC761_SpecialBinaryString {
         List<String> l = new ArrayList<>();
 
         int c = 0, st = 0;
+        // Split the string into special substrings
         for (int i = 0; i < s.length(); i++) {
             if (s.charAt(i) == '1') {
                 c++;
