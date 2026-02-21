@@ -14,6 +14,7 @@ class LC762_CountPrimeSetBits {
     public int countPrimeSetBits(int left, int right) {
         int c = 0;
         for (int i = left; i <= right; i++) {
+            //Inbuilt function to count the number of set bits in the binary representation of i
             int Sb = Integer.bitCount(i);
             if (prime(Sb)) {
                 c++;
