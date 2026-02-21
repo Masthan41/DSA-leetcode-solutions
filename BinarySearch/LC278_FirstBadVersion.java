@@ -8,6 +8,12 @@ Space Complexity: O(1)
 
 /* The isBadVersion API is defined in the parent class VersionControl.
       boolean isBadVersion(int version); */
+class VersionControl {
+    boolean isBadVersion(int version) {
+        // Placeholder for the actual implementation
+        return false; // This should be overridden in the actual test environment
+    }
+}
 
 public class LC278_FirstBadVersion extends VersionControl {
     public int firstBadVersion(int n) {
