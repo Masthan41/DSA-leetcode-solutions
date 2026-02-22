@@ -14,4 +14,10 @@ class LC191_NumberOf1Bits {
         }
         return c;
     }
+    public static void main(String[] args) {
+        LC191_NumberOf1Bits solution = new LC191_NumberOf1Bits();
+        int n = 11; // Binary: 1011, has three '1' bits
+        int result = solution.hammingWeight(n);
+        System.out.println("Number of '1' bits: " + result);
+    }
 }
