@@ -15,7 +15,13 @@ class LC27_RemoveElement {
                 k++;
             }
         }
-
         return k;
+    }
+    public static void main(String[] args) {
+        LC27_RemoveElement obj = new LC27_RemoveElement();
+        int[] nums = { 3, 2, 2, 3 };
+        int val = 3;
+        int k = obj.removeElement(nums, val);
+        System.out.println("New length: " + k); // New length: 2
     }
 }

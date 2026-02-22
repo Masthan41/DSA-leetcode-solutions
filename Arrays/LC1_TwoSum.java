@@ -18,4 +18,11 @@ class LC1_TwoSum {
         }
         return new int[] {};
     }
+    public static void main(String[] args) {
+        LC1_TwoSum obj = new LC1_TwoSum();
+        int[] nums = { 2, 7, 11, 15 };
+        int target = 9;
+        int[] result = obj.twoSum(nums, target);
+        System.out.println("Indices: " + result[0] + ", " + result[1]); // Indices: 0, 1
+    }
 }

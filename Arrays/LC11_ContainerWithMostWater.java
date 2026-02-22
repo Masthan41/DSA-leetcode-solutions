@@ -23,4 +23,8 @@ public class LC11_ContainerWithMostWater {
         }
         return maxArea;
     }
+    public static void main(String[] args) {
+        LC11_ContainerWithMostWater obj = new LC11_ContainerWithMostWater();
+        int[] height = { 1, 8, 6, 2, 5, 4, 8, 3, 7 };
+        System.out.println(obj.maxArea(height)); // 49
 }

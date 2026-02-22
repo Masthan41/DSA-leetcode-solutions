@@ -23,4 +23,18 @@ class LC35_SearchInsertPosition {
 
         return low;
     }
+    public static void main(String[] args) {
+        LC35_SearchInsertPosition obj = new LC35_SearchInsertPosition();
+        int[] nums = { 1, 3, 5, 6 };
+        int target = 5;
+        System.out.println(obj.searchInsert(nums, target)); // 2
+
+        target = 2;
+        System.out.println(obj.searchInsert(nums, target)); // 1
+
+        target = 7;
+        System.out.println(obj.searchInsert(nums, target)); // 4
+
+        target = 0;
+        System.out.println(obj.searchInsert(nums, target)); // 0
 }

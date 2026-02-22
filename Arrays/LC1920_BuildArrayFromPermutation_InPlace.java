@@ -19,4 +19,13 @@ public class LC1920_BuildArrayFromPermutation_InPlace {
 
         return nums;
     }
+    public static void main(String[] args) {
+        LC1920_BuildArrayFromPermutation_InPlace obj = new LC1920_BuildArrayFromPermutation_InPlace();
+        int[] nums = { 0, 2, 1, 5, 3, 4 };
+        int[] result = obj.buildArray(nums);
+        System.out.print("Result: ");
+        for (int num : result) {
+            System.out.print(num + " ");
+        }
+        // Result: 0 1 2 4 5 3
 }

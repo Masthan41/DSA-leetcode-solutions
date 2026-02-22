@@ -13,4 +13,11 @@ class LC136_SingleNumber {
         }
         return res;
     }
+    public static void main(String[] args) {
+        LC136_SingleNumber obj = new LC136_SingleNumber();
+        int[] nums = { 2, 2, 1 };
+        System.out.println(obj.singleNumber(nums)); // 1
+
+        nums = new int[] { 4, 1, 2, 1, 2 };
+        System.out.println(obj.singleNumber(nums)); // 4
 }
