@@ -28,4 +28,10 @@ class LC118_PascalsTriangle {
 
         return result;
     }
+    public static void main(String[] args) {
+        LC118_PascalsTriangle solution = new LC118_PascalsTriangle();
+        int numRows = 5;
+        List<List<Integer>> pascalTriangle = solution.generate(numRows);
+        System.out.println(pascalTriangle);
+    }
 }
