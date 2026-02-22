@@ -29,4 +29,11 @@ class LC91_DecodeWays {
 
         return dp[0];
     }
+    public static void main(String[] args) {
+        LC91_DecodeWays solution = new LC91_DecodeWays();
+
+        String s = "226";
+        int result = solution.numDecodings(s);
+        System.out.println("Number of ways to decode: " + result); // Output: 3
+    }
 }
