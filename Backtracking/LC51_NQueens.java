@@ -59,4 +59,10 @@ class LC51_NQueens {
         }
         return res;
     }
+    public static void main(String[] args) {
+        LC51_NQueens sol = new LC51_NQueens();
+        int n = 4;
+        List<List<String>> result = sol.solveNQueens(n);
+        System.out.println(result);
+    }
 }

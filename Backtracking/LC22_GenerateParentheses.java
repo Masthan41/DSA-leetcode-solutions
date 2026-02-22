@@ -33,4 +33,10 @@ class LC22_GenerateParentheses {
             sb.deleteCharAt(sb.length() - 1);
         }
     }
+    public static void main(String[] args) {
+        LC22_GenerateParentheses sol = new LC22_GenerateParentheses();
+        int n = 3;
+        List<String> result = sol.generateParenthesis(n);
+        System.out.println(result);
+    }
 }

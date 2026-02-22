@@ -31,4 +31,10 @@ class LC78_Subsets {
         // Exclude from nums
         backtrack(nums, i + 1, curr, result);
     }
+    public static void main(String[] args) {
+        LC78_Subsets sol = new LC78_Subsets();
+        int[] nums = {1, 2, 3};
+        List<List<Integer>> result = sol.subsets(nums);
+        System.out.println(result);
+    }
 }
