@@ -31,4 +31,10 @@ public class LC278_FirstBadVersion extends VersionControl {
 
         return low;
     }
+    public static void main(String[] args) {
+        LC278_FirstBadVersion solution = new LC278_FirstBadVersion();
+        int n = 5; // Total versions
+        // Assuming version 4 is the first bad version for testing
+        System.out.println("First bad version: " + solution.firstBadVersion(n));
+    }
 }

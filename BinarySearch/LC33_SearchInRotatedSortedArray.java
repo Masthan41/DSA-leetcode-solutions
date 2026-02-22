@@ -36,4 +36,11 @@ public class LC33_SearchInRotatedSortedArray {
         }
         return -1;
     }
+    public static void main(String[] args) {
+        LC33_SearchInRotatedSortedArray solution = new LC33_SearchInRotatedSortedArray();
+        int[] arr = {4, 5, 6, 7, 0, 1, 2};
+        int target = 0;
+        int result = solution.search(arr, target);
+        System.out.println("Target found at index: " + result);
+    }
 }

@@ -43,4 +43,11 @@ public class LC81_SearchInRotatedSortedArrayII {
         }
         return false;
     }
+    public static void main(String[] args) {
+        LC81_SearchInRotatedSortedArrayII solution = new LC81_SearchInRotatedSortedArrayII();
+        int[] arr = {2, 5, 6, 0, 0, 1, 2};
+        int target = 0;
+        boolean result = solution.search(arr, target);
+        System.out.println("Target found: " + result);
+    }
 }
