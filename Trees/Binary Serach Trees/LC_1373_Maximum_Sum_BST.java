@@ -1,4 +1,9 @@
-
+/*
+LeetCode 1373 - Maximum Sum BST in Binary Tree
+Approach: Post-order traversal + Info class to track min, max, sum, and isBST status
+Time Complexity: O(n)
+Space Complexity: O(h) where h is the height of the tree
+*/
 class LC_1373_Maximum_Sum_BST {
     class Info {
         int min, max, sum;
