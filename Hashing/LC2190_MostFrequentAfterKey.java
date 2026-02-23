@@ -30,4 +30,10 @@ class LC2190_MostFrequentAfterKey {
         }
         return ans;
     }
+    public static void main(String[] args) {
+        LC2190_MostFrequentAfterKey solution = new LC2190_MostFrequentAfterKey();
+        int[] nums = {1, 100, 200, 1, 100};
+        int key = 1;
+        System.out.println(solution.mostFrequent(nums, key)); // Output: 100
+    }
 }
