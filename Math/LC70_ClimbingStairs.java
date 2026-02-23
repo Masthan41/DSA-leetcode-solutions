@@ -24,4 +24,9 @@ class LC70_ClimbingStairs {
         }
         return b;
     }
+    public static void main(String[] args) {
+        LC70_ClimbingStairs solution = new LC70_ClimbingStairs();
+        int n = 5;
+        System.out.println(solution.climbStairs(n)); // Output: 8
+    }
 }

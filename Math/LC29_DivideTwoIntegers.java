@@ -35,4 +35,10 @@ class LC29_DivideTwoIntegers {
 
         return (int) quo;
     }
+    public static void main(String[] args) {
+        LC29_DivideTwoIntegers solution = new LC29_DivideTwoIntegers();
+        int dividend = 10;
+        int divisor = 3;
+        System.out.println(solution.divide(dividend, divisor)); // Output: 3
+    }
 }

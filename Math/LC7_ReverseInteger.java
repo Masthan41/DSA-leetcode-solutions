@@ -20,4 +20,9 @@ public class LC7_ReverseInteger {
         }
         return rev;
     }
+    public static void main(String[] args) {
+        LC7_ReverseInteger solution = new LC7_ReverseInteger();
+        int n = 123;
+        System.out.println(solution.reverse(n)); // Output: 321
+    }
 }

@@ -27,4 +27,9 @@ class LC9_PalindromeNumber {
         // For odd digits: x == rev / 10 (middle digit ignored)
         return (x == rev) || (x == rev / 10);
     }
+    public static void main(String[] args) {
+        LC9_PalindromeNumber solution = new LC9_PalindromeNumber();
+        int x = 121;
+        System.out.println(solution.isPalindrome(x)); // Output: true
+    }
 }

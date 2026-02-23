@@ -30,4 +30,9 @@ class LC69_SqrtX {
 
         return ans;
     }
+    public static void main(String[] args) {
+        LC69_SqrtX solution = new LC69_SqrtX();
+        int x = 8;
+        System.out.println(solution.mySqrt(x)); // Output: 2
+    }
 }

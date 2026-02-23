@@ -27,4 +27,9 @@ class LC202_HappyNumber {
 
         return fast == 1;
     }
+    public static void main(String[] args) {
+        LC202_HappyNumber solution = new LC202_HappyNumber();
+        int n = 19;
+        System.out.println(solution.isHappy(n)); // Output: true
+    }
 }
