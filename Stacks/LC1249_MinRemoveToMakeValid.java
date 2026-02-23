@@ -37,4 +37,9 @@ class LC1249_MinRemoveToMakeValid {
         }
         return ans.toString();
     }
+    public static void main(String[] args) {
+        LC1249_MinRemoveToMakeValid solution = new LC1249_MinRemoveToMakeValid();
+        String str = "a)b(c)d";
+        System.out.println(solution.minRemoveToMakeValid(str)); // Output: "ab(c)d"
+    }
 }

@@ -34,4 +34,9 @@ class LC20_ValidParentheses {
             return false;
         }
     }
+    public static void main(String[] args) {
+        LC20_ValidParentheses solution = new LC20_ValidParentheses();
+        String str = "()[]{}";
+        System.out.println(solution.isValid(str)); // Output: true
+    }
 }

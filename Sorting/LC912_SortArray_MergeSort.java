@@ -55,4 +55,14 @@ class LC912_SortArray_MergeSort {
             arr[i] = temp[k];
         }
     }
+    public static void main(String[] args) {
+        LC912_SortArray_MergeSort solution = new LC912_SortArray_MergeSort();
+        int[] nums = { 5, 2, 3, 1 };
+        int[] sorted = solution.sortArray(nums);
+        System.out.print("Sorted Array: ");
+        for (int num : sorted) {
+            System.out.print(num + " ");
+        }
+        // Sorted Array: 1 2 3 5
+    }
 }

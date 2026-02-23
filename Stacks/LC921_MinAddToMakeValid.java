@@ -21,7 +21,11 @@ class LC921_MinAddToMakeValid {
                 }
             }
         }
-
         return add + open;
+    }
+    public static void main(String[] args) {
+        LC921_MinAddToMakeValid solution = new LC921_MinAddToMakeValid();
+        String s = "())";
+        System.out.println(solution.minAddToMakeValid(s)); // Output: 1
     }
 }

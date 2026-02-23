@@ -28,4 +28,15 @@ public class LC496_NextGreaterElementI {
 
         return result;
     }
+    public static void main(String[] args) {
+        LC496_NextGreaterElementI solution = new LC496_NextGreaterElementI();
+        int[] nums1 = { 4, 1, 2 };
+        int[] nums2 = { 1, 3, 4, 2 };
+        int[] result = solution.nextGreaterElement(nums1, nums2);
+        System.out.print("Next Greater Elements: ");
+        for (int num : result) {
+            System.out.print(num + " ");
+        }
+        // Next Greater Elements: -1 3 -1
+    }
 }

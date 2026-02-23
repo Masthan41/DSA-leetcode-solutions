@@ -21,4 +21,14 @@ public class LC739_DailyTemperatures {
         }
         return ans;
     }
+    public static void main(String[] args) {
+        LC739_DailyTemperatures solution = new LC739_DailyTemperatures();
+        int[] temperatures = { 73, 74, 75, 71, 69, 72, 76, 73 };
+        int[] result = solution.dailyTemperatures(temperatures);
+        System.out.print("Days until warmer temperature: ");
+        for (int days : result) {
+            System.out.print(days + " ");
+        }
+        // Days until warmer temperature: 1 1 4 2 1 1 0 0
+    }
 }
