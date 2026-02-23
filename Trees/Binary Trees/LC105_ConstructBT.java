@@ -37,7 +37,7 @@ class LC105_ConstructBT {
         LC105_ConstructBT obj = new LC105_ConstructBT();
         int[] preorder = {3, 9, 20, 15, 7};
         int[] inorder = {9, 3, 15, 20, 7};
-        TreeNode root = obj.buildTree(preorder, inorder);
+        obj.buildTree(preorder, inorder);
         // The tree is constructed successfully. You can add code to print or verify the tree structure if needed.
     }
 }
