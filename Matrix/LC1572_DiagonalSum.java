@@ -1,3 +1,10 @@
+/*
+LeetCode 867 - Daigonal sum of Matrix
+Approach: Iterate through the matrix and sum the elements on the primary and secondary diagonals.
+Time Complexity: O(m*n)
+Space Complexity: O(1)
+*/
+
 class LC1572_DiagonalSum {
     public int diagonalSum(int[][] mat) {
         int sum = 0;
