@@ -28,4 +28,5 @@ public class LC1920_BuildArrayFromPermutation_InPlace {
             System.out.print(num + " ");
         }
         // Result: 0 1 2 4 5 3
+    }
 }

@@ -20,4 +20,5 @@ class LC136_SingleNumber {
 
         nums = new int[] { 4, 1, 2, 1, 2 };
         System.out.println(obj.singleNumber(nums)); // 4
+    }
 }

@@ -37,4 +37,5 @@ class LC35_SearchInsertPosition {
 
         target = 0;
         System.out.println(obj.searchInsert(nums, target)); // 0
+    }
 }

@@ -26,4 +26,5 @@ class LC242_ValidAnagram {
         String s1 = "anagram";
         String s2 = "nagaram";
         System.out.println(isAnagram(s1, s2)); // true
+    }
 }

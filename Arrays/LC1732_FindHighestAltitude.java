@@ -21,4 +21,5 @@ class LC1732_FindHighestAltitude {
         LC1732_FindHighestAltitude obj = new LC1732_FindHighestAltitude();
         int[] gain = { -5, 1, 5, 0, -7 };
         System.out.println(obj.largestAltitude(gain)); // 1
+    }
 }
