@@ -36,4 +36,19 @@ class LC141_LinkedListCycle {
         }
         return false;
     }
+    public static void main(String[] args) {
+        LC141_LinkedListCycle solution = new LC141_LinkedListCycle();
+
+        ListNode head = new ListNode(3);
+        ListNode node2 = new ListNode(2);
+        ListNode node0 = new ListNode(0);
+        ListNode node4 = new ListNode(-4);
+
+        head.next = node2;
+        node2.next = node0;
+        node0.next = node4;
+        node4.next = node2; // Creates a cycle
+
+        System.out.println(solution.hasCycle(head)); // Output: true
+    }
 }

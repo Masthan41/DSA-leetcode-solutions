@@ -42,4 +42,19 @@ class LC21_MergeTwoSortedLists {
 
         return dummy.next;
     }
+    public static void main(String[] args) {
+        LC21_MergeTwoSortedLists solution = new LC21_MergeTwoSortedLists();
+
+        ListNode list1 = new ListNode(1, new ListNode(2, new ListNode(4)));
+        ListNode list2 = new ListNode(1, new ListNode(3, new ListNode(4)));
+
+        ListNode mergedList = solution.mergeTwoLists(list1, list2);
+
+        // Print the merged list
+        while (mergedList != null) {
+            System.out.print(mergedList.val + " ");
+            mergedList = mergedList.next;
+        }
+        // Output: 1 1 2 3 4 4
+    }
 }

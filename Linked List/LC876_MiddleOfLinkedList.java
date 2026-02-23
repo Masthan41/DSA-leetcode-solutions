@@ -34,4 +34,12 @@ class LC876_MiddleOfLinkedList {
 
         return slow;
     }
+    public static void main(String[] args) {
+        LC876_MiddleOfLinkedList solution = new LC876_MiddleOfLinkedList();
+
+        ListNode head = new ListNode(1, new ListNode(2, new ListNode(3, new ListNode(4, new ListNode(5)))));
+
+        ListNode middle = solution.middleNode(head);
+        System.out.println(middle.val); // Output: 3
+    }
 }

@@ -13,8 +13,13 @@ class ListNode {
     int val;
     ListNode next;
 
-    ListNode() {}
-    ListNode(int val) { this.val = val; }
+    ListNode() {
+    }
+
+    ListNode(int val) {
+        this.val = val;
+    }
+
     ListNode(int val, ListNode next) {
         this.val = val;
         this.next = next;
@@ -23,7 +28,8 @@ class ListNode {
 
 class LC143_ReorderList {
     public void reorderList(ListNode head) {
-        if (head == null || head.next == null) return;
+        if (head == null || head.next == null)
+            return;
 
         // Step 1: Find middle
         ListNode slow = head;
@@ -60,5 +66,21 @@ class LC143_ReorderList {
             first = next1;
             second = next2;
         }
+    }
+
+    public static void main(String[] args) {
+        LC143_ReorderList solution = new LC143_ReorderList();
+
+        ListNode head = new ListNode(1, new ListNode(2, new ListNode(3, new ListNode(4))));
+
+        solution.reorderList(head);
+
+        // Print the result
+        ListNode curr = head;
+        while (curr != null) {
+            System.out.print(curr.val + " ");
+            curr = curr.next;
+        }
+        // Output: 1 4 2 3
     }
 }

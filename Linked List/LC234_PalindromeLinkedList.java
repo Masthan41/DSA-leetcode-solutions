@@ -70,4 +70,11 @@ class LC234_PalindromeLinkedList {
         }
         return true;
     }
+    public static void main(String[] args) {
+        LC234_PalindromeLinkedList solution = new LC234_PalindromeLinkedList();
+
+        ListNode head = new ListNode(1, new ListNode(2, new ListNode(2, new ListNode(1))));
+
+        System.out.println(solution.isPalindrome(head)); // Output: true
+    }
 }

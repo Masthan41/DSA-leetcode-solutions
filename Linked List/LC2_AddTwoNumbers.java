@@ -43,4 +43,19 @@ class LC2_AddTwoNumbers {
 
         return dummy.next;
     }
+    public static void main(String[] args) {
+        LC2_AddTwoNumbers solution = new LC2_AddTwoNumbers();
+
+        ListNode l1 = new ListNode(2, new ListNode(4, new ListNode(3)));
+        ListNode l2 = new ListNode(5, new ListNode(6, new ListNode(4)));
+
+        ListNode result = solution.addTwoNumbers(l1, l2);
+
+        // Print the result
+        while (result != null) {
+            System.out.print(result.val + " ");
+            result = result.next;
+        }
+        // Output: 7 0 8
+    }
 }

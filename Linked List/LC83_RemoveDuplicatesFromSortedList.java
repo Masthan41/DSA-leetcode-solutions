@@ -34,4 +34,18 @@ class LC83_RemoveDuplicatesFromSortedList {
 
         return head;
     }
+    public static void main(String[] args) {
+        LC83_RemoveDuplicatesFromSortedList solution = new LC83_RemoveDuplicatesFromSortedList();
+
+        ListNode head = new ListNode(1, new ListNode(1, new ListNode(2, new ListNode(3, new ListNode(3)))));
+
+        ListNode result = solution.deleteDuplicates(head);
+
+        // Print the result
+        while (result != null) {
+            System.out.print(result.val + " ");
+            result = result.next;
+        }
+        // Output: 1 2 3
+    }
 }
