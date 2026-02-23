@@ -23,7 +23,12 @@ class LC287_FindDuplicateNumber {
             left = nums[left];
             right = nums[right];
         }
-
         return left;
+    }
+    public static void main(String[] args) {
+        LC287_FindDuplicateNumber solution = new LC287_FindDuplicateNumber();
+        int[] nums = {1, 3, 4, 2, 2};
+        int duplicate = solution.findDuplicate(nums);
+        System.out.println("Duplicate number: " + duplicate);
     }
 }
