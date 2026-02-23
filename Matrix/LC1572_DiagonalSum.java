@@ -1,5 +1,5 @@
 /*
-LeetCode 867 - Daigonal sum of Matrix
+LeetCode 1572 - Diagonal Sum of Matrix
 Approach: Iterate through the matrix and sum the elements on the primary and secondary diagonals.
 Time Complexity: O(m*n)
 Space Complexity: O(1)

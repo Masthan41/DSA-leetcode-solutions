@@ -1,3 +1,10 @@
+/*
+LeetCode 1545 - Find Kth Bit in Nth Binary String
+Approach: Recursively find the kth bit in the nth binary string.
+Time Complexity: O(n)
+Space Complexity: O(n)
+*/
+
 class LC1545_KthBitInNthBinary{
     public char findKthBit(int n, int k) {
         if (n == 1) {
