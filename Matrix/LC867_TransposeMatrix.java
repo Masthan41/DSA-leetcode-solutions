@@ -15,4 +15,27 @@ class LC867_TransposeMatrix {
         }
         return a;
     }
+    public static void main(String[] args) {
+        LC867_TransposeMatrix solution = new LC867_TransposeMatrix();
+        int[][] mat = {
+            {1, 2, 3},
+            {4, 5, 6},
+            {7, 8, 9}
+        };
+        int[][] result = solution.transpose(mat);
+        System.out.println("Original Matrix:");
+        for (int[] row : mat) {
+            for (int val : row) {
+                System.out.print(val + " ");
+            }
+            System.out.println();
+        }
+        System.out.println("Transposed Matrix:");
+        for (int[] row : result) {
+            for (int val : row) {
+                System.out.print(val + " ");
+            }
+            System.out.println();
+        }
+    }
 }
