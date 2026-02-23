@@ -32,10 +32,4 @@ class LC401_BinaryWatch {
         List<String> times = solution.readBinaryWatch(turnedOn);
         System.out.println(times);
     }
-    public static void main(String[] args) {
-        LC401_BinaryWatch solution = new LC401_BinaryWatch();
-        int turnedOn = 1;
-        List<String> times = solution.readBinaryWatch(turnedOn);
-        System.out.println(times);
-    }
 }
