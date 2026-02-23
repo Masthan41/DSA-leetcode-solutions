@@ -3,7 +3,7 @@ This repository contains my curated solutions to LeetCode problems implemented i
 A structured collection of LeetCode problems solved in Java with clean, optimized implementations.
 
 Each solution includes:
-- Problem number and link
+- Problem number and name
 - Brief explanation of the approach
 - Time and space complexity analysis
 - A standalone **main()** method for local execution and testing
