@@ -1,5 +1,6 @@
 /* LeetCode 43 - Multiply Strings
 Approach: Simulate manual multiplication using an integer array of size n + m, multiply digits from right to left, place results at i + j + 1 and handle carry at i + j, then build the final string skipping leading zeros.
+
 Time Complexity: O(n * m)
 Space Complexity: O(n + m)
 */
