@@ -21,4 +21,9 @@ class LC121_BestTimeToBuy {
         }
         return maxProfit;
     }
+    public static void main(String[] args) {
+        LC121_BestTimeToBuy sol = new LC121_BestTimeToBuy();
+        int[] prices = {7,1,5,3,6,4};
+        System.out.println(sol.maxProfit(prices)); // Output: 5
+    }
 }
