@@ -1,3 +1,10 @@
+/*
+LeetCode 762 - Count Prime Set Bits in Binary Representation
+Approach: Iterate and updae count
+Time Complexity: O(n*sqrt(m)) where n is the number of integers in the range [left, right] and m is the maximum number of set bits in any integer in that range. The prime checking function runs in O(sqrt(m)).
+Space Complexity: O(1)
+*/
+
 class LC762_CountPrimeSetBits {
     public boolean prime(int n) {
         if (n <= 1) {
