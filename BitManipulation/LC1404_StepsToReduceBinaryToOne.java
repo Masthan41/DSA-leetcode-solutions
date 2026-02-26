@@ -1,3 +1,10 @@
+/*
+LeetCode 1404 - Steps to Reduce Binary Number to One
+Approach: Iterate from the end of the binary string , counting the steps required to reduce the number to one.
+Time Complexity: O(n)
+Space Complexity: O(1)
+*/
+
 class LC1404_StepsToReduceBinaryToOne{
     public int numSteps(String s) {
         int steps = 0, carry = 0;
