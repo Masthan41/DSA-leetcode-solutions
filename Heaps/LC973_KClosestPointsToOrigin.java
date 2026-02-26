@@ -30,8 +30,8 @@ class LC973_KClosestPointsToOrigin {
         int points[][] = { { 1, 3 }, { -2, 2 } };
         int k = 1;
         int res[][] = obj.kClosest(points, k);
-        for (int i = 0; i < res.length; i++) {
-            System.out.println(res[i][0] + " " + res[i][1]);
+        for (int[] re : res) {
+            System.out.println(re[0] + " " + re[1]);
         }
     }
 }
