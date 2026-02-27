@@ -1,3 +1,12 @@
+/*
+LeetCode 3666 - Minimum Operations to equalize Binary String
+Approach: Use a breadth-first search (BFS) approach to explore the number of zeros in the string after performing operations. We maintain a distance array to track the minimum operations needed to reach each state (number of zeros). We also use two TreeSets to efficiently manage states based on parity (even or odd number of zeros) and find valid next states within the computed range. The BFS continues until we reach the state with zero zeros or exhaust all possibilities.
+
+Time Complexity: O(n^2) in the worst case due to the BFS and TreeSet operations, but typically much less due to pruning of states.
+
+Space Complexity: O(n) for the distance array and TreeSets.
+*/
+
 import java.util.*;
 
 class LC3666_MinOperations {
