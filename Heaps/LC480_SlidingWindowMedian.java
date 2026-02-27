@@ -1,8 +1,8 @@
 /*
-LeetCode 347 - Top K Frequent Elements
-Approach: Use a min-heap to keep track of the top k frequent elements.
+LeetCode 480 - Sliding Window Median
+Approach: Use two heaps (max heap for smaller half, min heap for larger half) to maintain median efficiently.
 Time Complexity: O(n log k)
-Space Complexity: O(n)
+Space Complexity: O(k)
 */
 
 import java.util.*;
