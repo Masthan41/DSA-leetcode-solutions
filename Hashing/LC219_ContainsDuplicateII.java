@@ -1,3 +1,10 @@
+/*
+LeetCode 219 - Contains Duplicate II
+Approach: HashSet for Duplicate Detection with Window Size k
+Time Complexity: O(n)
+Space Complexity: O(min(n, k))
+*/
+
 import java.util.*;
 
 class LC219_ContainsDuplicateII {

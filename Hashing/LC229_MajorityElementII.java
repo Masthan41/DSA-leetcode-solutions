@@ -1,6 +1,10 @@
-import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.List;
+/*
+LeetCode 229 - Majority Element II
+Approach: Hashing
+Time Complexity: O(n)
+Space Complexity: O(n)
+*/
+import java.util.*;
 
 class LC229_MajorityElementII {
     public List<Integer> majorityElement(int[] nums) {
