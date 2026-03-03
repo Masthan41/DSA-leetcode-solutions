@@ -13,7 +13,7 @@ class LC648_RepalceWords {
         boolean eow = false;
     }
 
-    private Node root = new Node();
+    private final Node root = new Node();
 
     private void insert(String word) {
         Node curr = root;
