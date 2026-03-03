@@ -7,7 +7,7 @@ Space Complexity: O(n^2)
 
 import java.util.*;
 
-class LC51_NQueens {
+class LC51_Nqueens {
 
     public List<List<String>> solveNQueens(int n) {
         List<List<String>> result = new ArrayList<>();
@@ -38,15 +38,18 @@ class LC51_NQueens {
 
     private boolean isSafe(char[][] board, int row, int col) {
         for (int i = row - 1; i >= 0; i--) {
-            if (board[i][col] == 'Q') return false;
+            if (board[i][col] == 'Q')
+                return false;
         }
 
         for (int i = row - 1, j = col - 1; i >= 0 && j >= 0; i--, j--) {
-            if (board[i][j] == 'Q') return false;
+            if (board[i][j] == 'Q')
+                return false;
         }
 
         for (int i = row - 1, j = col + 1; i >= 0 && j < board.length; i--, j++) {
-            if (board[i][j] == 'Q') return false;
+            if (board[i][j] == 'Q')
+                return false;
         }
 
         return true;
@@ -55,12 +58,13 @@ class LC51_NQueens {
     private List<String> construct(char[][] board) {
         List<String> res = new ArrayList<>();
         for (int i = 0; i < board.length; i++) {
-            res.add(new String(board [i] ));
+            res.add(new String(board[i]));
         }
         return res;
     }
+
     public static void main(String[] args) {
-        LC51_NQueens sol = new LC51_NQueens();
+        LC51_Nqueens sol = new LC51_Nqueens();
         int n = 4;
         List<List<String>> result = sol.solveNQueens(n);
         System.out.println(result);
