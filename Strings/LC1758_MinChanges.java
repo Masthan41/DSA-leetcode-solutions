@@ -1,3 +1,10 @@
+/*
+LeetCode 1758 - Minimum Changes to Make Alternating Binary String
+Approach: Count the number of operations needed to make the string alternate starting with '0' and '1', then return the minimum.
+Time Complexity: O(n)
+Space Complexity: O(1)
+*/
+
 class LC1758_MinChanges {
     public int minOperations(String s) {
         int c = 0;
