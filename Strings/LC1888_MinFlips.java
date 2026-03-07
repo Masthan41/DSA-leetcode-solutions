@@ -44,9 +44,10 @@ class LC1888_MinFlips {
         }
         return res;
     }
+
     public static void main(String[] args) {
         LC1888_MinFlips obj = new LC1888_MinFlips();
-        System.out.println(obj.minFlips("111000")); //output : 2
-        System.out.println(obj.minFlips("101")); //output : 0
+        System.out.println(obj.minFlips("111000")); // output : 2
+        System.out.println(obj.minFlips("101")); // output : 0
     }
 }
