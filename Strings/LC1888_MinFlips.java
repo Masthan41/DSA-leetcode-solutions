@@ -1,3 +1,10 @@
+/*
+LeetCode 1888 - Minimum Number of Flips to Make the Binary String Alternating
+Approach: Use a sliding window to check all possible rotations of the string against two alternating patterns.
+Time Complexity: O(n)
+Space Complexity: O(1)
+*/
+
 class LC1888_MinFlips {
     public int minFlips(String s) {
         String str = s + s;
