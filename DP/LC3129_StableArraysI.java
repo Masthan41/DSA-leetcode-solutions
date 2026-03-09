@@ -40,6 +40,6 @@ class LC3129_StableArraysI {
 
         int zero = 2, one = 2, limit = 1;
         int result = solution.numberOfStableArrays(zero, one, limit);
-        System.out.println("Number of stable arrays: " + result); // Output: 4
+        System.out.println("Number of stable arrays: " + result); // Output: 2
     }
 }
