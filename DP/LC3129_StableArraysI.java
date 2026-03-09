@@ -1,4 +1,11 @@
-class LC3129_StableArrays {
+/*
+LeetCode 3129 - Find All Possible Stable Binary Arrays I
+Approach: Dynamic Programming (3D DP to track counts of 0s and 1s with constraints)
+Time complexity: O(zero * one * limit)
+Space complexity: O(zero * one * limit)
+*/
+
+class LC3129_StableArraysI {
     public int numberOfStableArrays(int zero, int one, int limit) {
         int MOD = 1_000_000_007;
         long[][][] dp = new long[zero + 1][one + 1][2];
@@ -29,7 +36,7 @@ class LC3129_StableArrays {
     }
 
     public static void main(String[] args) {
-        LC3129_StableArrays solution = new LC3129_StableArrays();
+        LC3129_StableArraysI solution = new LC3129_StableArraysI();
 
         int zero = 2, one = 2, limit = 1;
         int result = solution.numberOfStableArrays(zero, one, limit);
