@@ -1,3 +1,9 @@
+/*
+LeetCode 3130 - Find All Possible Stable Binary Arrays II
+Approach: Dynamic Programming (3D DP to track counts of 0s and 1s with constraints, optimized space)
+Time complexity: O(zero * one)
+Space complexity: O(zero * one)
+*/
 
 class LC3130_StableArraysII {
 
