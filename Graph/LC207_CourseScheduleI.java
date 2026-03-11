@@ -1,5 +1,5 @@
 /*
-LeetCode 210 - Course Schedule I
+LeetCode 207 - Course Schedule I
 Approach: Topological Sort using BFS (Kahn's Algorithm)
 Time complexity: O(V + E) where V is the number of courses and E is the number of prerequisites
 Space complexity: O(V + E) where V is the number of courses and E is the number of prerequisites
