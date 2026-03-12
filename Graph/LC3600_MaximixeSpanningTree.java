@@ -1,6 +1,14 @@
+/*
+LeetCode 3600 - Maximize Spanning tree Stability with upgrades.
+Approach: Use binary search to find the maximum stability. For each mid value, use a DSU to check if we can connect all nodes with edges that have stability >= mid, and if not, try to upgrade some edges with stability >= mid/2 using the available upgrades (k). If we can connect all nodes, then we can try for a higher mid value, otherwise we need to try a lower mid value.
+(Binary search + DSU)
 
-import java.util.ArrayList;
-import java.util.List;
+Time Complexity: O(E log S) where E is the number of edges and S is the range of stability values (up to 2e5).
+
+Space Complexity: O(N) for the DSU data structure, where N is the number of nodes.
+*/
+
+import java.util.*;
 
 class DSU {
 
@@ -128,5 +136,16 @@ class LC3600_MaximixeSpanningTree {
             }
         }
         return result;
-    }      
+    }
+
+    public static void main(String[] args) {
+        LC3600_MaximixeSpanningTree solution = new LC3600_MaximixeSpanningTree();
+
+        int n = 3;
+        int[][] edges = {{0, 1, 2, 1}, {1, 2, 3, 0}};
+        int k = 1;
+
+        int result = solution.maxStability(n, edges, k);
+        System.out.println(result); // Output: 2
+    }
 }
