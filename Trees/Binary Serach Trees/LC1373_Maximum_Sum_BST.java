@@ -4,7 +4,7 @@ Approach: Post-order traversal + Info class to track min, max, sum, and isBST st
 Time Complexity: O(n)
 Space Complexity: O(h) where h is the height of the tree
 */
-class LC_1373_Maximum_Sum_BST {
+class LC1373_Maximum_Sum_BST {
     class Info {
         int min, max, sum;
         boolean isBST;
@@ -43,7 +43,7 @@ class LC_1373_Maximum_Sum_BST {
         return new Info(0, 0, 0, false);
     }
     public static void main(String[] args) {
-        LC_1373_Maximum_Sum_BST solution = new LC_1373_Maximum_Sum_BST();
+        LC1373_Maximum_Sum_BST solution = new LC1373_Maximum_Sum_BST();
 
         // Example usage:
         TreeNode root = new TreeNode(1);

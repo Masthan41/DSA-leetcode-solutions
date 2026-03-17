@@ -6,7 +6,7 @@ Space Complexity: O(n)
 */
 import java.util.*;
 
-public class LC_1382_Balance_BST {
+public class LC1382_Balance_BST {
     public void getInorder(TreeNode root, ArrayList<Integer> list) {
         if (root == null) {
             return;
@@ -36,7 +36,7 @@ public class LC_1382_Balance_BST {
         return createBST(list, 0, list.size() - 1);
     }
     public static void main(String[] args) {
-        LC_1382_Balance_BST obj = new LC_1382_Balance_BST();
+        LC1382_Balance_BST obj = new LC1382_Balance_BST();
         TreeNode root = new TreeNode(1);
         root.right = new TreeNode(2);
         root.right.right = new TreeNode(3);

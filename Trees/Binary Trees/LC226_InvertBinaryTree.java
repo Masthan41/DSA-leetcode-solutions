@@ -5,7 +5,7 @@ Time Complexity: O(n)
 Space Complexity: O(h) where h is the height of the tree
 */
 
-class LC_226_Invert_Binary_Tree {
+class LC226_InvertBinaryTree {
     public TreeNode invertTree(TreeNode root) {
         if (root == null) {
             return null;
@@ -20,7 +20,7 @@ class LC_226_Invert_Binary_Tree {
     }
 
     public static void main(String[] args) {
-        LC_226_Invert_Binary_Tree solution = new LC_226_Invert_Binary_Tree();
+        LC226_InvertBinaryTree solution = new LC226_InvertBinaryTree();
         TreeNode root = new TreeNode(1);
         root.left = new TreeNode(2);
         root.right = new TreeNode(3);
