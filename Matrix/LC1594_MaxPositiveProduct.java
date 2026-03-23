@@ -1,3 +1,10 @@
+/*
+LeetCode 1594 - Maximum Product of a Path in a Grid
+Approach: Use dynamic programming to track the maximum and minimum products at each cell.
+Time Complexity: O(m*n) 
+Space Complexity: O(m*n)
+*/
+
 
 //Custom Pair class (Not needed in leetcode, but used here for clarity)
 class Pair<K, V> {
