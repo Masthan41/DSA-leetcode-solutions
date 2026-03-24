@@ -1,3 +1,11 @@
+/*
+LeetCode 1922 - Count Good Numbers
+Approach: Use Fast Exponentiation to calculate the number of good numbers based on the positions of even and odd indices.
+
+Time Complexity: O(log n) as we are using fast exponentiation to calculate the powers of 5 and 4.
+Space Complexity: O(1) as we are using a constant amount of space to store variables and the result.
+*/
+
 class LC1922_GoodNumbers {
     final int MOD = 1000000007;
 
