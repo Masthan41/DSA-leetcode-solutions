@@ -1,3 +1,13 @@
+/*
+LeetCode 3576 - Equal Sum Grid with Patition I
+
+Approach: Calculate the total sum of the grid and the sum of each row and column. Then, check if there exists a horizontal or vertical cut that divides the grid into two parts with equal sums.
+
+Time Complexity: O(m*n) for calculating the total sum and the sums of each row and column.
+
+Space Complexity: O(m + n) for storing the sums of each row and column.
+*/
+
 class LC3546_EqualSumGrid {
     public boolean canPartitionGrid(int[][] grid) {
         int m = grid.length;
