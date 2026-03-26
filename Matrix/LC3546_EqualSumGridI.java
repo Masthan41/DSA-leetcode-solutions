@@ -48,7 +48,7 @@ class LC3546_EqualSumGridI {
         return false;
     }
     public static void main(String[] args) {
-        LC3546_EqualSumGrid obj = new LC3546_EqualSumGrid();
+        LC3546_EqualSumGridI obj = new LC3546_EqualSumGridI();
         int[][] grid = {{1, 2}, {3, 4}};
         System.out.println(obj.canPartitionGrid(grid)); // Output: true
     }    
