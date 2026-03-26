@@ -8,7 +8,7 @@ Time Complexity: O(m*n) for calculating the total sum and the sums of each row a
 Space Complexity: O(m + n) for storing the sums of each row and column.
 */
 
-class LC3546_EqualSumGrid {
+class LC3546_EqualSumGridI {
     public boolean canPartitionGrid(int[][] grid) {
         int m = grid.length;
         int n = grid[0].length;
