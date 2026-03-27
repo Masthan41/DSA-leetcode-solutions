@@ -15,7 +15,6 @@ class LC2946_MatrixSimilarity{
 
         for (int i = 0; i < mat.length; i++) {
             for (int j = 0; j < mat[0].length; j++) {
-                int CurrIdx = j;
                 int finalIdx;
 
                 if (i % 2 == 0) { // even so left shift
