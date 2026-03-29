@@ -6,7 +6,7 @@ Time Complexity: O(n) where n is the length of the strings, since we need to ite
 Space Complexity: O(1) since we are using fixed-size arrays of length 26 to count character frequencies, which does not grow with the input size.
 */
 
-class LC2840_CheckStringII{
+class LC2840_CheckStringII {
     public boolean checkStrings(String s1, String s2) {
         int even[] = new int[26];
         int odd[] = new int[26];
@@ -27,7 +27,8 @@ class LC2840_CheckStringII{
         }
         return true;
     }
-    public static void main(String[] args){
+
+    public static void main(String[] args) {
         LC2840_CheckStringII obj = new LC2840_CheckStringII();
         String s1 = "abcd";
         String s2 = "cdab";
