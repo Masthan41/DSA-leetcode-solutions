@@ -22,4 +22,12 @@ class LC2840_CheckStringI {
 
         return condtion1 && condtion2;
     }
+
+    public static void main(String[] args) {
+        LC2840_CheckStringI obj = new LC2840_CheckStringI();
+        String s1 = "abcd";
+        String s2 = "cdab";
+        boolean res = obj.canBeEqual(s1, s2);
+        System.out.println(res);
+    }
 }
