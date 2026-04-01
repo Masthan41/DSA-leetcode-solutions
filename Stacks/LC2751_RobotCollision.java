@@ -1,3 +1,11 @@
+/*
+LeetCode 2751 - Robot Collision
+Approach: Sort robots by position then use a stack to simulate collisions between right-moving and left-moving robots.
+
+Time complexity: O(n log n) due to sorting, where n is the number of robots.
+Space complexity: O(n) for the stack and result list.
+*/
+
 import java.util.*;
 
 class LC2751_RobotCollision {
