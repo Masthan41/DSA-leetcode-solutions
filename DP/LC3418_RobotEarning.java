@@ -1,3 +1,12 @@
+/*
+LeetCode 3418 - Maximum Amount of Coins Collected by a Robot
+Approach: Dynamic Programming (3D DP to track position and neutralization state, memoization for optimization)
+
+Time complexity: O(m * n * 3) where m and n are the dimensions of the coins grid, and 3 is for the neutralization states (0, 1, 2)
+
+Space complexity: O(m * n * 3) for the DP array, but can be optimized to O(m * n) if we only keep track of the current and next states.
+*/
+
 class LC3418_RobotEarning {
     int m, n;
     int[][][] dp;
