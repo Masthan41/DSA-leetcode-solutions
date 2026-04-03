@@ -1,3 +1,14 @@
+/*
+LeetCode 3661 - Maximum walls destroyed by a Robot
+Approach: Sorting / Binary Search / Dynamic Programming / Recursion / Memoization
+Sort robots and walls, then use dynamic programming with binary search to maximize unique walls destroyed considering blocking constraints.
+
+
+Time complexity: O(n log n + m log m + n log m) where n is the number of robots and m is the number of walls. Sorting takes O(n log n) and O(m log m), and the DP recursion with memoization takes O(n * 2) since each robot can shoot in 2 directions.
+
+Space complexity: O(n+ m) for sorting and storing the DP table, but the DP table itself is O(n * 2) = O(n) since we only store results for each robot and two directions.
+*/
+
 import java.util.*;
 
 public class LC3661_MaxWalls {
