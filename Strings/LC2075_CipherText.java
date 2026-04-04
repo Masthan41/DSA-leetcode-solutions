@@ -1,3 +1,11 @@
+/*
+Leetcode 2075 - Decode Slanted ciphertext
+Approach - Simulating the reverse process of a slanted transposition cipher by iterating through matrix diagonals.
+
+Time Complexity - O(n) where n is the length of the encoded text.
+Space Complexity - O(n) for the StringBuilder storing the decoded text.
+*/
+
 class LC2075_CipherText {
     public String decodeCiphertext(String encodedText, int rows) {
         int l = encodedText.length();
