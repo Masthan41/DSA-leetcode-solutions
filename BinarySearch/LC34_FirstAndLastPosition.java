@@ -1,3 +1,12 @@
+/*
+LeetCode 34 - Find First and Last Position of Element in Sorted Array
+Pattern: Binary Search on Monotonic Condition
+Approach: Narrow search space to find first and last occurrence
+
+Time Complexity: O(log n) because of binary search
+Space Complexity: O(1) for iterative approach and no extra space used
+*/
+
 class LC34_FirstAndLastPosition {
     public int[] searchRange(int[] nums, int target) {
         int getfirst = first(nums, target);
