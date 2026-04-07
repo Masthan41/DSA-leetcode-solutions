@@ -1,3 +1,10 @@
+/*
+LeetCode 2069 - Walking Robot Simulation II
+Approach: Simulate robot movement using a circular list of positions and directions.
+Time Complexity: O(n+m) where n is the number of steps and m is the perimeter of the grid.
+Space Complexity: O(m) where m is the perimeter of the grid.
+*/
+
 import java.util.*;
 
 class LC2069_WalkingSimulationII {
