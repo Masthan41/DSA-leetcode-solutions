@@ -1,3 +1,10 @@
+/*
+Leetcode 657: Return to Origin
+Approach: Simulate the movements and check if the final position is the origin
+Time Complexity: O(n) - where n is the length of the moves string
+Space Complexity: O(1) - we are using a constant amount of space to track the position
+*/
+
 class LC657_ReturnToOrigin {
     public boolean judgeCircle(String moves) {
         int x = 0, y = 0;
