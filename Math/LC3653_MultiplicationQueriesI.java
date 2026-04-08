@@ -7,7 +7,7 @@ Time Complexity: O(m * n) where m is the number of queries and n is the length o
 Space Complexity: O(1) as we are modifying the nums array in place and using a constant amount of extra space for variables and the result.
 */
 
-public class LC3653_MultiplicationQueriesI {
+class LC3653_MultiplicationQueriesI {
     final int M = 1000000007;
 
     public int xorAfterQueries(int[] nums, int[][] queries) {
