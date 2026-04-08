@@ -1,3 +1,10 @@
+/*
+LeetCode 1480 - Running Sum of 1d Array
+Approach: Iterate through the array and update each element to be the sum of itself and all previous elements
+Time complexity: O(n) where n is the length of the array
+Space complexity: O(1) for the in-place modification
+*/
+
 import java.util.*;
 
 class LC1480_RunningSum {
