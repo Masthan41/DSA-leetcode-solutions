@@ -1,3 +1,13 @@
+/*
+LeetCode 3740 - Minimum Distance between three equal Elements I
+Approach: brute force naive approach of 3 for loops to find the minimum distance between three equal elements in the array.
+
+Time Complexity: O(n^3) due to the three nested loops iterating through the array.
+Space Complexity: O(1) as we are using only a constant amount of extra space to store the result.
+*/
+
+/*Optimized version of this problem is in LC3741 */
+
 class LC3740_GoodTuplesI {
     public int minimumDistance(int[] nums) {
         int res = Integer.MAX_VALUE;
