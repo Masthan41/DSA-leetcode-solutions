@@ -1,3 +1,12 @@
+/*
+LeetCode 3741 - Minimum Distance between three equal Elements II
+
+Approach: Optimized approach using a HashMap to store the indices of each element in the array. As we iterate through the array, we check if the current element has appeared at least three times before. If it has, we calculate the distance between the current index and the index of the third last occurrence of that element, and update the result accordingly.
+
+Time Complexity: O(n) due to the single pass through the
+Space Complexity: O(n) in the worst case if all elements are unique, as we may store all indices in the HashMap.
+*/
+
 import java.util.*;
 
 class LC3741_GoodTuplesII {
