@@ -1,3 +1,13 @@
+/*
+LeetCode 1320 - Minimum Distance to Type a Word Using Two Fingers
+
+Approach: Use dynamic programming to store the minimum distance to type the remaining characters of the word given the current positions of the two fingers. We can represent the positions of the fingers as indices from 0 to 25 (for letters A-Z) and 26 for the initial position (not on any key). The dp state can be defined as dp[i][f1][f2], where i is the current index in the word, f1 is the position of finger 1, and f2 is the position of finger 2. We will iterate through all possible positions of the fingers and calculate the minimum distance for each state.
+
+Time Complexity: O(n * 27 * 27) = O(n) where n is the length of the word and m is the number of possible positions for the fingers (27 in this case). This is because we have to fill a 3D dp table of size n x 27 x 27.
+
+Space Complexity: O(n * 27 * 27) = O(n) for the dp table. However, we can optimize it to O(27 * 27) = O(1) by only keeping track of the current and next states instead of the entire table.
+*/
+
 class LC1320_MinDistance {
     public int[] getCoordinate(int pos) {
         return new int[] { pos / 6, pos % 6 };
