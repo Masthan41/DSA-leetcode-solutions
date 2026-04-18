@@ -1,3 +1,12 @@
+/*
+LeetCode 3783 - Mirror Distance
+Approach: To calculate the mirror distance of a number, we first need to reverse the digits of the number and then find the absolute difference between the original number and its reversed version.
+
+Time Complexity: O(log n) where n is the input number. The log(n) factor comes from reversing the digits.
+Space Complexity: O(1) as we only use a constant amount of extra space.
+*/
+
+
 class LC3783_MirrorDistance {
     public int reverse(int n) {
         int rev = 0;
