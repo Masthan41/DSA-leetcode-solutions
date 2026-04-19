@@ -6,7 +6,7 @@ Time Complexity: O(m + n) where m and n are the lengths of the two arrays.
 Space Complexity: O(1) as we only use a constant amount of extra space.
 */
 
-class LC1855_MaxDistance{
+class LC1855_MaxDistance {
     public int maxDistance(int[] nums1, int[] nums2) {
         int m = nums1.length;
         int n = nums2.length;
@@ -27,10 +27,11 @@ class LC1855_MaxDistance{
 
         return result;
     }
+
     public static void main(String[] args) {
         LC1855_MaxDistance obj = new LC1855_MaxDistance();
-        int[] nums1 = {1, 2, 3};
-        int[] nums2 = {3, 4, 5};
+        int[] nums1 = { 1, 2, 3 };
+        int[] nums2 = { 3, 4, 5 };
         System.out.println("Maximum Distance: " + obj.maxDistance(nums1, nums2));
     }
 }
