@@ -1,3 +1,13 @@
+/*
+LeetCode 1722 - Minimum Hamming Distance After Swap Operations
+Approach: Use Union-Find to group indices that can be swapped, then count mismatches within each group.
+
+Time Complexity: O(n * α(n)) where α is the inverse Ackermann function
+Space Complexity: O(n)
+*/
+
+import java.util.*;
+
 class LC1722_HammingDistance {
     int[] parent;
     int[] rank;
