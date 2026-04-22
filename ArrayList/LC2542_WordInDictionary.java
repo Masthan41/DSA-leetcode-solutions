@@ -1,5 +1,11 @@
-import java.util.ArrayList;
-import java.util.List;
+/*
+LeetCode 2542 - Word in Dictionary
+Approach: Compare each query with each dictionary word and count differences.
+Time Complexity: O(m * n * k)
+Space Complexity: O(1)
+*/
+
+import java.util.*;
 
 class LC2542_WordInDictionary {
     public List<String> twoEditWords(String[] queries, String[] dictionary) {
