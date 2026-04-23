@@ -1,5 +1,12 @@
-import java.util.HashMap;
-import java.util.Map;
+/*
+LeetCode 2615 - Sum of Distances
+Approach: To find the sum of distances for each element, we can iterate through the array twice - once from left to right and once from right to left - keeping track of the cumulative sum and count of each element.
+
+Time Complexity: O(n) where n is the length of the nums array.
+Space Complexity: O(n) for the HashMaps.
+*/
+
+import java.util.*;
 
 class LC2615_SumofDistances {
     public long[] distance(int[] nums) {
