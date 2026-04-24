@@ -1,4 +1,11 @@
-class LC2833_FursthestPoint{
+/*
+LeetCode 2833 - Furthest Point From Origin
+Approach: Count the number of 'L', 'R', and '_' characters in the string.
+Time Complexity: O(n)
+Space Complexity: O(1)
+*/
+
+class LC2833_FursthestPoint {
     public int furthestDistanceFromOrigin(String moves) {
         int left = 0, right = 0, dash = 0;
         for (char ch : moves.toCharArray()) {
@@ -12,6 +19,7 @@ class LC2833_FursthestPoint{
         }
         return Math.abs(left - right) + dash;
     }
+
     public static void main(String[] args) {
         LC2833_FursthestPoint sol = new LC2833_FursthestPoint();
         String moves = "LLRRRUDUDU";
