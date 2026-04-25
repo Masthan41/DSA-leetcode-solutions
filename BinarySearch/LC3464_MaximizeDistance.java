@@ -8,6 +8,8 @@ Time Complexity: O(n log n) due to sorting and binary search.
 Space Complexity: O(n) for the array storing the positions of the points on the perimeter.
 */
 
+import java.util.*;
+
 class LC3464_MaximizeDistance {
     public int maxDistance(int side, int[][] points, int k) {
         int n = points.length;
