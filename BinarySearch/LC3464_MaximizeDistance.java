@@ -1,3 +1,13 @@
+/*
+LeetCode 3464 - Maximize Distance between points on a Square
+Approach: 1. Convert the 2D points to their corresponding positions on the perimeter of the square.
+            2. Sort the positions and use binary search to find the maximum distance that can be maintained between k points.
+
+
+Time Complexity: O(n log n) due to sorting and binary search.
+Space Complexity: O(n) for the array storing the positions of the points on the perimeter.
+*/
+
 class LC3464_MaximizeDistance {
     public int maxDistance(int side, int[][] points, int k) {
         int n = points.length;
