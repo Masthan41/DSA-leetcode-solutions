@@ -1,3 +1,11 @@
+/*
+LeetCode 1599 - Detect Cycles in 2D Grid
+Approach: start DFS from each unvisited cell and check if we can find a cycle. A cycle is found if we reach an already visited cell that is not the parent of the current cell.
+
+Time Complexity: O(m*n) - we visit each cell at most once.
+Space Complexity: O(m*n) - for the visited array and the recursion stack in the worst case.
+*/
+
 class LC1599_DetectCycle {
     int m, n;
     int dir[][] = { { 1, 0 }, { 0, 1 }, { -1, 0 }, { 0, -1 } };
