@@ -1,4 +1,14 @@
-class LC1391_FindValidPath{
+/*
+LeetCode 1391 - Find a Valid Path in a Grid
+Approach: Graph traversal using DFS to validate connected paths based on directional constraints. We maintain a mapping of each cell type to its possible directions and check if we can move from the current cell to the next cell and back.
+
+Time Complexity: O(m*n) - we visit each cell at most once.
+Space Complexity: O(m*n) - for the visited array and the recursion stack in the worst case.
+*/
+
+
+import java.util.*;
+
     int m, n;
 
     Map<Integer, int[][]> directions = new HashMap<>();
@@ -46,7 +56,8 @@ class LC1391_FindValidPath{
 
         return dfs(grid, 0, 0, visited);
     }
-    public static void main(String[] args){
+
+    public static void main(String[] args) {
         LC1391_FindValidPath obj = new LC1391_FindValidPath();
         int grid[][] = { { 2, 4, 3 }, { 6, 5, 2 } };
         System.out.println(obj.hasValidPath(grid));
