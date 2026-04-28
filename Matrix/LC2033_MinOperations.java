@@ -1,3 +1,11 @@
+/*
+LeetCode 2033 - Minimum Operations to Make a Subarray Equal
+Approach: Find the median of the flattened array and calculate the minimum operations needed to make all elements equal to the median.
+
+Time Complexity: O(m*n*log(m*n)) due to sorting
+Space Complexity: O(m*n) for the list to store the flattened grid
+*/
+
 class LC2033_MinOperations{
     public int minOperations(int[][] grid, int x) {
         int m = grid.length;
