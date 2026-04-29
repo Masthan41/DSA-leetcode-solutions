@@ -41,6 +41,7 @@ class LC2033_MinOperations {
     public static void main(String[] args) {
         LC2033_MinOperations obj = new LC2033_MinOperations();
         int grid[][] = { { 2, 4 }, { 6, 8 } };
-        System.out.println(minOperations(grid, 2));
+        int x = 2;
+        System.out.println(obj.minOperations(grid, x)); // Output: 4
     }
 }
