@@ -1,3 +1,11 @@
+/*
+LeetCode 3255 - Maximum Score of a Grid Path
+Approach: Use dynamic programming with memoization to find the maximum score path.
+
+Time Complexity: O(n^3) due to the three nested loops (height, col, and the recursive calls)
+Space Complexity: O(n^2) for the memoization table and prefix sums
+*/
+
 class LC3255_MaxScore {
     int n;
     long[][][] t;
