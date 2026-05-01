@@ -1,4 +1,13 @@
-class LC398_RotateFunction {
+/*
+LeetCode 396 - Rotate Function
+Approach: Prefix and simulation
+Calculate the initial value of F(0) and the sum of the array. Then, use the recurrence relation to compute F(k) for k = 1 to n-1.
+
+Time complexity: O(n) where n is the length of the array. We make one pass to calculate F(0) and sum, and then another pass to compute F(k) for k = 1 to n-1.
+Space complexity: O(1) extra space, as we only use a few variables to store intermediate results.
+*/
+
+class LC396_RotateFunction {
     public int maxRotateFunction(int[] nums) {
         int n = nums.length;
 
@@ -24,7 +33,7 @@ class LC398_RotateFunction {
     }
 
     public static void main(String[] args) {
-        LC398_RotateFunction obj = new LC398_RotateFunction();
+        LC396_RotateFunction obj = new LC396_RotateFunction();
         int[] nums = { 4, 3, 2, 6 };
         int result = obj.maxRotateFunction(nums);
         System.out.println(result);
