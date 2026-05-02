@@ -1,3 +1,11 @@
+/*
+LeetCode 788 - Rotated Digits
+Approach: Brute Force - simple simulation of the problem statement
+
+Time Complexity: O(n * log n) due to checking each number up to n and the number of digits in n is log n
+Space Complexity: O(1)
+*/
+
 class LC788_RotatedDigits {
     private boolean isGood(int num) {
         boolean changed = false;
