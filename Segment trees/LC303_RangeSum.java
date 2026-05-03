@@ -1,3 +1,13 @@
+/*
+LeetCode 303 - Range Sum Query - Immutable
+Approach: Prefix Sum + Segment Tree
+
+Time Complexity: O(1) for sumRange, O(n) for initialization
+Space Complexity: O(n) for prefix array
+*/
+
+
+
 class LC303_RangeSum {
     class NumArray {
         int prefix[];
