@@ -1,3 +1,10 @@
+/*
+LeetCode 48 - Rotate Image
+Approach: Transpose & reverse the rows
+Time Complexity: O(n^2) for transposing and reversing the rows
+Space Complexity: O(1) for in-place rotation
+*/
+
 class LC48_RotateImage {
     public void rotate(int[][] matrix) {
         int n = matrix.length;
