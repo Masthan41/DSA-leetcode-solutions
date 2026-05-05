@@ -1,3 +1,12 @@
+/*
+Leetcode - 61 : Rotate List
+Approach: Find the length of the list, adjust k to be within the length, then break the list at the appropriate position and reconnect.
+
+Time Complexity: O(n) where n is the number of nodes in the list
+Space Complexity: O(1) since we are modifying the list in place
+*/
+
+
 
 //This class is not needed in leetcode, but added for testing purposes
 class ListNode {
