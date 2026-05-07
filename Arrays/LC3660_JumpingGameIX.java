@@ -1,3 +1,12 @@
+/*
+Leetcode 3660 - Jumping Game IX
+Appraoch : Using prefix maximums and suffix minimums to determine reachable maximum values via valid jumps.
+
+Time Complexity: O(n) for computing prefix maximums, suffix minimums, and the final result.
+Space Complexity: O(n) for storing the prefix maximums, suffix minimums, and the result array.
+*/
+
+
 class LC3660_JumpingGameIX{
     public int[] maxValue(int[] nums) {
         int n = nums.length;
