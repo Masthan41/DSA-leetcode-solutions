@@ -1,3 +1,11 @@
+/*
+LeetCode 1456 - Maximum Number of Vowels in a Substring of Given Length
+Approach: Sliding Window with two pointers counting vowels
+Time Complexity: O(n) for iterating through the string once
+Space Complexity: O(1) for variables (excluding input string)
+*/
+
+
 class LC1456_MaxVowels {
     private boolean isVowel(char s) {
         if (s == 'a' || s == 'e' || s == 'i' || s == 'o' || s == 'u') {
