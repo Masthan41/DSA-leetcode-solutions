@@ -5,28 +5,30 @@ Time Complexity: O(n)
 Space Complexity: O(min(n, charset))
 */
 
-import java.util.HashSet;
+import java.util.*;
 
 class LC3_LongestSubstring {
 
     public int lengthOfLongestSubstring(String s) {
-        
+
         HashSet<Character> set = new HashSet<>();
-        int l = 0, maxL = 0;
-        for (int r = 0; r < s.length(); r++) {
-            while (set.contains(s.charAt(r))) {
-                set.remove(s.charAt(l));
-                l++;
+        int left = 0, maxLeft = 0;
+
+        for (int i = 0; i < s.length(); i++) {
+            while (set.contains(s.charAt(i))) {
+                set.remove(s.charAt(left));
+                left++;
             }
-            set.add(s.charAt(r));
-            maxL = Math.max(maxL, r - l + 1);
+            set.add(s.charAt(i));
+            maxLeft = Math.max(maxLeft, i - left + 1);
         }
-        return maxL;
+        return maxLeft;
     }
+
     public static void main(String[] args) {
         LC3_LongestSubstring solution = new LC3_LongestSubstring();
         String s = "abcabcbb";
         int result = solution.lengthOfLongestSubstring(s);
-        System.out.println(result);
+        System.out.println(result); // Output: 3
     }
 }
