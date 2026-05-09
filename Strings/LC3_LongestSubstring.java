@@ -12,15 +12,15 @@ class LC3_LongestSubstring {
     public int lengthOfLongestSubstring(String s) {
 
         HashSet<Character> set = new HashSet<>();
-        int length = 0, maxlength = 0;
+        int left = 0, maxlength = 0;
 
         for (int i = 0; i < s.length(); i++) {
             while (set.contains(s.charAt(i))) {
-                set.remove(s.charAt(length));
-                length++;
+                set.remove(s.charAt(left));
+                left++;
             }
             set.add(s.charAt(i));
-            maxlength = Math.max(maxlength, i - length + 1);
+            maxlength = Math.max(maxlength, i - left + 1);
         }
         return maxlength;
     }
