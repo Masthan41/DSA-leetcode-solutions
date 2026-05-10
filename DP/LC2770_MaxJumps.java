@@ -5,6 +5,8 @@ Time Complexity: O(n^2) where n is the length of the input array nums, due to th
 Space Complexity: O(n) for the dp array t, which stores the maximum number of jumps from each index to the end of the array.
 */
 
+import java.util.*;
+
 class LC2770_MaxJumps {
     public int maximumJumps(int[] nums, int target) {
         int n = nums.length;
