@@ -1,3 +1,10 @@
+/*
+Leetcode 485 - Max Consecutive Ones I
+Appraoch : Iterate through the input array and count the number of consecutive 1's. Whenever a 0 is encountered, reset the count to 0. Keep track of the maximum count of consecutive 1's encountered during the iteration.
+
+Time Complexity: O(n) where n is the length of the input array nums.
+Space Complexity: O(1) for the count variables.
+*/
 
 
 class LC485_MaxConsecutiveOnesI {
