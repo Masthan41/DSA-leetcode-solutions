@@ -1,4 +1,11 @@
+/*
+LeetCode 1665 - Minimum Initial Energy to Finish Tasks
+Approach: Binary Search + Greedy approach
+Time Complexity: O(n log n) due to sorting and binary search
+Space Complexity: O(n) for sorting the tasks array
+*/
 
+import java.util.*;
 
 class LC1665_MinEnergy {
     public boolean isPossible(int[][] tasks, int mid) {
