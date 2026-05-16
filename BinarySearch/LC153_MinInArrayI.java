@@ -23,7 +23,7 @@ class LC153_MinInArrayI {
     }
 
     public static void main(String[] args) {
-        LC153_MinInArray obj = new LC153_MinInArray();
+        LC153_MinInArrayI obj = new LC153_MinInArrayI();
         int[] nums = { 3, 4, 5, 1, 2 };
         int min = obj.findMin(nums);
         System.out.println(min);
