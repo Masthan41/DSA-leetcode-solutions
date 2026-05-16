@@ -6,7 +6,7 @@ Time Complexity: O(log n)
 Space Complexity: O(1)
 */
 
-class LC153_MinInArray {
+class LC153_MinInArrayI {
     public int findMin(int[] nums) {
         int left = 0, right = nums.length - 1;
 
