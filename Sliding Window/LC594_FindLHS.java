@@ -5,6 +5,7 @@ Time Complexity: O(n) - we visit each element once.
 Space Complexity: O(n) - for the HashMap.
 */
 
+import java.util.*;
 
 class LC594_FindLHS {
     public int findLHS(int[] nums) {
