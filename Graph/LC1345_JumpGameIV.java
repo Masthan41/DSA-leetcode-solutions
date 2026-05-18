@@ -1,8 +1,11 @@
-import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.LinkedList;
-import java.util.List;
-import java.util.Queue;
+/*
+LeetCode 1345 - Jump Game IV
+Approach: We use Breadth First Search (BFS) to explore all possible jumps from the starting index. We maintain a queue for BFS and a visited array to avoid cycles. We also use a HashMap to store the indices of each value in the array, allowing us to jump to all indices with the same value in O(1) time. After processing all indices with the same value, we remove that entry from the HashMap to prevent redundant checks.
+Time Complexity: O(n) - we visit each index at most once.
+Space Complexity: O(n) - for the queue, visited array, and HashMap.
+*/
+
+import java.util.*;
 
 class LC1345_JumpGameIV {
     public int minJumps(int[] arr) {
