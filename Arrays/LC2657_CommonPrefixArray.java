@@ -1,3 +1,9 @@
+/*
+LeetCode 2657 - Common Prefix Strings
+Approach: To find the common prefix for each pair of strings, we can iterate through the arrays and compare characters at each position until a mismatch is found.
+Time Complexity: O(m * n) where m is the average length of the strings and n is the number of strings.
+Space Complexity: O(1) excluding the space used for the output array.
+*/
 
 import java.util.*;
 
