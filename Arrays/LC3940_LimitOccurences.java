@@ -18,9 +18,7 @@ class LC3940_LimitOccurences {
             }
         }
         int res[] = new int[write];
-        for (int i = 0; i < write; i++) {
-            res[i] = nums[i];
-        }
+        System.arraycopy(nums, 0, res, 0, write);
         return res;
     }
 
