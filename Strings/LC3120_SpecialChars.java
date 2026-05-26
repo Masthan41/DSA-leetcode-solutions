@@ -1,26 +1,23 @@
 /*
 Leetcode 3120 - Number of Special Characters in a String
-Appraoch : To count the number of special characters in a string, we can use two boolean arrays to track the presence of uppercase and lowercase letters. We iterate through the string and mark the presence of each character in the respective array. Finally, we count how many characters are present in both arrays, which indicates that they are special characters.
+Appraoch : Use a HashSet to store unique characters from the input string, then iterate through the lowercase letters and check if both the lowercase and uppercase versions of the letter are present in the set.
 Time Complexity: O(n) for iterating through the string.
-Space Complexity: O(1) for the boolean arrays, as they have a fixed size of 26.
+Space Complexity: O(n) for the HashSet, where n is the number of unique characters.
 */
+
+import java.util.*;
 
 class LC3120_SpecialChars {
     public int numberOfSpecialChars(String word) {
-        boolean capital[] = new boolean[26];
-        boolean small[] = new boolean[26];
+        HashSet<Character> set = new HashSet<>();
 
-        for (int i = 0; i < word.length(); i++) {
-            if (Character.isUpperCase(word.charAt(i))) {
-                capital[word.charAt(i) - 'A'] = true;
-            } else if (Character.isLowerCase(word.charAt(i))) {
-                small[word.charAt(i) - 'a'] = true;
-            }
+        for (char ch : word.toCharArray()) {
+            set.add(ch);
         }
 
         int count = 0;
-        for (int i = 0; i < 26; i++) {
-            if (capital[i] && small[i]) {
+        for (char ch = 'a'; ch <= 'z'; ch++) {
+            if (set.contains(ch) && set.contains((char) (ch - 'a' + 'A'))) {
                 count++;
             }
         }
