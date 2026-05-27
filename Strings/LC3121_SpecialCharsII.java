@@ -1,4 +1,11 @@
-import java.util.Arrays;
+/*
+Leetcode 3121 - Number of Special Characters in a String II
+Appraoch : Use two arrays to track the last occurrence of lowercase letters and the first occurrence of uppercase letters. Iterate through the string to populate these arrays, then count how many characters have a valid lowercase and uppercase occurrence where the lowercase occurs before the uppercase.
+Time Complexity: O(n) for iterating through the string.
+Space Complexity: O(1) for the two arrays, as they have a fixed size of 26.
+*/
+
+import java.util.*;
 
 class LC3121_SpecialCharsII {
     public int numberOfSpecialChars(String word) {
