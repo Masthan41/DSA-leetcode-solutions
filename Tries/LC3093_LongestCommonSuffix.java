@@ -1,4 +1,9 @@
-
+/*
+LeetCode 3093 - Length of longest common suffix
+Approach: Build a Trie from the first array of numbers and then search for the longest common suffix for each number in the second array
+Time Complexity: O(N * M) where N is the number of elements in arr1 and M is the average number of digits in each number
+Space Complexity: O(N * M) for the Trie
+*/
 
 class LC3093_LongestCommonSuffix {
     static class TrieNode {
