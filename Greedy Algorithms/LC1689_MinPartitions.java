@@ -1,3 +1,10 @@
+/*
+LeetCode 1689 - Minimum Partitions
+Approach: Find the maximum digit in the string, as each partition can contribute at most 1 to the sum.
+Time Complexity: O(n)
+Space Complexity: O(1)
+*/
+
 class LC1689_MinPartitions {
     public int minPartitions(String n) {
         int maxDig = 0;
