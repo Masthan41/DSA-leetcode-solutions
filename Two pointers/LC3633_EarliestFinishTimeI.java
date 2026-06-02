@@ -5,7 +5,7 @@ Time Complexity: O(m + n) where m and n are the lengths of the land and water ri
 Space Complexity: O(1) as we only use a constant amount of extra space.
 */
 
-class LC3633_MinimizeRidesI {
+class LC3633_EarliestFinishTimeI {
     public int earliestFinishTime(int[] landStartTime, int[] landDuration, int[] waterStartTime, int[] waterDuration) {
         int landToWater = calc(
                 landStartTime, landDuration,
@@ -37,7 +37,7 @@ class LC3633_MinimizeRidesI {
     }
 
     public static void main(String[] args) {
-        LC3633_MinimizeRidesI obj = new LC3633_MinimizeRidesI();
+        LC3633_EarliestFinishTimeI obj = new LC3633_EarliestFinishTimeI();
         int[] landStartTime = { 1, 2, 3 };
         int[] landDuration = { 2, 2, 2 };
         int[] waterStartTime = { 2, 3, 4 };
