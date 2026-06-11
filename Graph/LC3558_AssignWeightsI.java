@@ -1,7 +1,13 @@
-import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
+
+/*
+LeetCode 3558 - Number of ways to Assign Weights to Edges I
+Approach: Build an adjacency list representation of the graph, find the maximum depth of the tree, and calculate 2^(maxDepth - 1) to get the number of ways to assign weights.
+Time Complexity: O(V + E) where V is the number of vertices and E is the number of edges in the graph.
+Space Complexity: O(V + E) for the adjacency list and recursion stack.
+*/
+
+
+import java.util.*;
 
 class LC3558_AssignWeightsI {
     static final long MOD = 1_000_000_007L;
