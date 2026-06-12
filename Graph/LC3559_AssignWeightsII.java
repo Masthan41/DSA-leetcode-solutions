@@ -6,6 +6,8 @@ Time Complexity: O((V + E) log V) for preprocessing and O(log V) for each query,
 Space Complexity: O(V log V) for the ancestor table and O(V) for the adjacency list and depth array.
 */
 
+import java.util.*;
+
 class LC3559_AssignWeightsII {
     int M = 1000000007;
     int n;
