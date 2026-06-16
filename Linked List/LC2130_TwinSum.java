@@ -8,7 +8,7 @@ Space Complexity: O(n/2) = O(n) for the stack.
 
 import java.util.*;
 
-public class ListNode {
+class ListNode {
     int val;
     ListNode next;
 
