@@ -1,3 +1,10 @@
+/*
+LeetCode 1833 - Max Ice Cream Bars
+Approach: Counting Sort
+Time complexity: O(n + m) where n is the length of costs and m is the maximum cost
+Space complexity: O(m) ~ O(1) since m is a constant (100000)
+*/
+
 class LC1833_MaxIceCreamBars {
     public int maxIceCream(int[] costs, int coins) {
         int freq[] = new int[100001];
