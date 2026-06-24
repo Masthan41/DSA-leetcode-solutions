@@ -5,6 +5,7 @@ Time Complexity: O(n) where n is the length of the array
 Space Complexity: O(1) if we don't consider the output array, otherwise O(n)
 */
 
+import java.util.*;
 
 class LC977_SquaresOfArray {
     public int[] sortedSquares(int[] nums) {
