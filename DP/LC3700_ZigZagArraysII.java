@@ -1,10 +1,10 @@
 /*
-LeetCode 3700 - Number of zigzag arrays I
-Approach: Dynamic Programming using prefix sums to count the number of zigzag arrays of length n with values in the range [l, r].
+LeetCode 3700 - Number of zigzag arrays II
+Approach: Dynamic Programming using matrix exponentiation to count the number of zigzag arrays of length n with values in the range [l, r].
 
-Time complexity: O(n * m) where n is the length of the array and m is the range size (r - l + 1). We iterate through lengths from 3 to n and for each length, we compute prefix sums for both "up" and "down" arrays, which takes O(m) time.
+Time complexity: O(m^3 * log(n)) where m is the range size (r - l + 1). We construct a transition matrix of size 2m x 2m and raise it to the power of (n - 2) using fast exponentiation, which takes O(log(n)) multiplications. Each multiplication of two matrices takes O(m^3) time.
 
-Space complexity: O(m) for storing the "up" and "down" arrays, as well as their prefix sums. We only need to keep track of the current length's arrays, so we can reuse space for previous lengths.
+Space complexity: O(m^2) for storing the transition matrix and the resulting matrix after exponentiation. We also use O(m) space for the state vector representing the counts of zigzag arrays of length 2.
 */
 
 class LC3700_ZigZagArraysII {
