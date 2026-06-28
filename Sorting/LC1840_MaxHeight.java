@@ -5,6 +5,8 @@ Time Complexity: O(m log m ) where m is the number of restrictions, due to sorti
 Space Complexity: O(m) where m is the number of restrictions, for storing the list of restrictions.
 */
 
+import java.util.*;
+
 class LC1840_MaxHeight {
     public int maxBuilding(int n, int[][] restrictions) {
         List<int[]> list = new ArrayList<>();

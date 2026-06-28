@@ -1,4 +1,12 @@
-import java.util.Arrays;
+/*
+LeetCode 1846 - Maximum Element After Decreasing and Rearranging
+Approach: Sort the array and then adjust elements to ensure the difference between adjacent elements is at most 1.
+Time Complexity: O(n log n) where n is the length of the array, due to sorting.
+Space Complexity: O(1) if we ignore the space used by the sorting algorithm.
+*/
+
+
+import java.util.*;
 
 class LC1846_MaxElement {
     public int maximumElementAfterDecrementingAndRearranging(int[] arr) {
