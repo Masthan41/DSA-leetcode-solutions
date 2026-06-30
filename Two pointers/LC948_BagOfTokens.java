@@ -5,7 +5,9 @@ Time Complexity: O(n log n) due to sorting.
 Space Complexity: O(1) since we are only using a constant amount of extra space.
 */
 
-class LC948_BagOfTokens{
+import java.util.*;
+
+class LC948_BagOfTokens {
     public int bagOfTokensScore(int[] tokens, int power) {
         Arrays.sort(tokens);
 
@@ -28,9 +30,10 @@ class LC948_BagOfTokens{
         }
         return maxScore;
     }
-    public static void main(String[] args){
+
+    public static void main(String[] args) {
         LC948_BagOfTokens solution = new LC948_BagOfTokens();
-        int[] tokens = {100, 200, 300, 400};
+        int[] tokens = { 100, 200, 300, 400 };
         int power = 200;
         int result = solution.bagOfTokensScore(tokens, power);
         System.out.println("Maximum score achievable: " + result);
