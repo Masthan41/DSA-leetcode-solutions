@@ -7,6 +7,8 @@ Time Complexity: O(n^2 * log(n)) where n is the size of the grid, due to binary 
 Space Complexity: O(n^2) for storing the distance matrix and visited array.
 */
 
+import java.util.*;
+
 class LC2812_SafestPath{
     int n;
     int[][] directions = {{1, 0}, {-1, 0}, {0, -1}, {0, 1}};
