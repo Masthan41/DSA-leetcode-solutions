@@ -84,6 +84,6 @@ class LC3620_NetworkRecovery {
     }
     public static void main(String[] args){
         LC3620_NetworkRecovery solution = new LC3620_NetworkRecovery();
-        
+        solution.findMaxPathScore(new int[][]{{0,1,2},{1,2,3},{0,2,4}}, new boolean[]{true,true,true}, 5);
     }
 }
