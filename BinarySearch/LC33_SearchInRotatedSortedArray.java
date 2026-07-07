@@ -6,39 +6,41 @@ Time Complexity: O(log n)
 Space Complexity: O(1)
 */
 
-
 public class LC33_SearchInRotatedSortedArray {
-    public int search(int[] arr, int tar) {
-        int si = 0, ei = arr.length - 1;
+    public int search(int[] nums, int target) {
+        int low = 0, high = nums.length - 1;
 
-        while (si <= ei) {
-            int mid = si + (ei - si) / 2;
+        while (low <= high) {
+            int mid = low + (high - low) / 2;
 
-            if (arr[mid] == tar)
+            if (nums[mid] == target) {
                 return mid;
+            }
 
-            // left half
-            if (arr[si] <= arr[mid]) {
-                if (arr[si] <= tar && tar < arr[mid]) {
-                    ei = mid - 1;
+            // left sorted
+            if (nums[low] <= nums[mid]) {
+                if (nums[low] <= target && target <= nums[mid]) {
+                    high = mid - 1;
                 } else {
-                    si = mid + 1;
+                    low = mid + 1;
                 }
             }
-            // right half
+
+            // right sorted
             else {
-                if (arr[mid] < tar && tar <= arr[ei]) {
-                    si = mid + 1;
+                if (nums[mid] <= target && target <= nums[high]) {
+                    low = mid + 1;
                 } else {
-                    ei = mid - 1;
+                    high = mid - 1;
                 }
             }
         }
         return -1;
     }
+
     public static void main(String[] args) {
         LC33_SearchInRotatedSortedArray solution = new LC33_SearchInRotatedSortedArray();
-        int[] arr = {4, 5, 6, 7, 0, 1, 2};
+        int[] arr = { 4, 5, 6, 7, 0, 1, 2 };
         int target = 0;
         int result = solution.search(arr, target);
         System.out.println("Target found at index: " + result);
