@@ -6,46 +6,46 @@ Time Complexity: O(log n) average, O(n) worst
 Space Complexity: O(1)
 */
 
-
 public class LC81_SearchInRotatedSortedArrayII {
-    public boolean search(int[] arr, int tar) {
-        int si = 0, ei = arr.length - 1;
+    public boolean search(int[] nums, int target) {
+        int low = 0, high = nums.length - 1;
 
-        while (si <= ei) {
-            int mid = si + (ei - si) / 2;
-
-            if (arr[mid] == tar)
+        while (low <= high) {
+            int mid = low + (high - low) / 2;
+            if (nums[mid] == target) {
                 return true;
-
-            // dulicates case
-            if (arr[si]==arr[mid] && arr[mid] == arr[ei]) {
-                si++;
-                ei--;
-                continue;
             }
 
-            // left half sorted
-            if (arr[si] <= arr[mid]) {
-                if (arr[si] <= tar && tar < arr[mid]) {
-                    ei = mid - 1;
+            // skip duplicates
+            if (nums[low] == nums[mid] && nums[mid] == nums[high]) {
+                low++;
+                high--;
+            }
+
+            // left sorted
+            else if (nums[low] <= nums[mid]) {
+                if (nums[low] <= target && target <= nums[mid]) {
+                    high = mid - 1;
                 } else {
-                    si = mid + 1;
+                    low = mid + 1;
                 }
             }
-            // right half sorted
+
+            // right sorted
             else {
-                if (arr[mid] < tar && tar <= arr[ei]) {
-                    si = mid + 1;
+                if (nums[mid] <= target && target <= nums[high]) {
+                    low = mid + 1;
                 } else {
-                    ei = mid - 1;
+                    high = mid - 1;
                 }
             }
         }
         return false;
     }
+
     public static void main(String[] args) {
         LC81_SearchInRotatedSortedArrayII solution = new LC81_SearchInRotatedSortedArrayII();
-        int[] arr = {2, 5, 6, 0, 0, 1, 2};
+        int[] arr = { 2, 5, 6, 0, 0, 1, 2 };
         int target = 0;
         boolean result = solution.search(arr, target);
         System.out.println("Target found: " + result);
