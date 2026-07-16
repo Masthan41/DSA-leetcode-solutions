@@ -4,7 +4,7 @@ Time Complexity: O(n * d) where n is the number of integers between num1 and num
 Space Complexity: O(1) as we only use a constant amount of extra space for the helper function and the main function.
 */
 
-class LC_3751TotalWaviness {
+class LC3751_TotalWaviness {
     private int waviness(int x) {
         if (x < 100) {
             return 0;
@@ -32,7 +32,7 @@ class LC_3751TotalWaviness {
     }
 
     public static void main(String[] args) {
-        LC_3751TotalWaviness obj = new LC_3751TotalWaviness();
+        LC3751_TotalWaviness obj = new LC3751_TotalWaviness();
         int num1 = 100, num2 = 200;
         int res = obj.totalWaviness(num1, num2);
         System.out.println(res);
