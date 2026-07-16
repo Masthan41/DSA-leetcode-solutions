@@ -5,7 +5,7 @@ Time Complexity: O(n * log(max(candies))) where n is the length of the candies a
 Space Complexity: O(1) as we only use a constant amount of extra space.
 */
 
-class LC226_MaxCandies {
+class LC2226_MaxCandies {
     public boolean isPossible(int candies[], int mid, long k) {
         long total = 0;
         for (int i = 0; i < candies.length; i++) {
@@ -38,7 +38,7 @@ class LC226_MaxCandies {
     }
 
     public static void main(String[] args) {
-        LC226_MaxCandies obj = new LC226_MaxCandies();
+        LC2226_MaxCandies obj = new LC2226_MaxCandies();
         int[] candies = { 5, 8, 6 };
         long k = 3;
         int result = obj.maximumCandies(candies, k);
