@@ -1,5 +1,11 @@
-import java.util.ArrayList;
-import java.util.List;
+/*
+LeetCode 1260 - Shift 2D Grid
+Approach: Convert the 2D grid into a 1D array, perform the shift operation, and then convert it back to a 2D grid
+Time Complexity: O(m*n) where m is the number of rows and n is the number of columns in the grid
+Space Complexity: O(m*n) for the new grid
+*/
+
+import java.util.*;
 
 class LC1260_Shift2DGrid {
     public List<List<Integer>> shiftGrid(int[][] grid, int k) {
