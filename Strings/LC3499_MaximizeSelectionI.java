@@ -1,5 +1,10 @@
+/*
+Leetcode 3499 - Maximize Active Selection I
+Approach - Check the existing count of active blocks and find the maximum sum of two adjacent inactive blocks. The result is the sum of existing active blocks and the maximum sum of two adjacent inactive blocks.
+Time Complexity - O(n) as we traverse the string twice, once to count active blocks and once to find inactive blocks.
+Space Complexity - O(m) where m is the number of inactive blocks, as we store their lengths in a list.
+*/
 
-import java.util.*;
 import java.util.*;
 
 class LC3499_MaximizeSelectionI {
