@@ -1,5 +1,12 @@
-import java.util.ArrayList;
-import java.util.List;
+/*
+LeetCode 3500 - Maximize Active Selection II
+Approach: we use segment tree to find the maximum pair sum of adjacent zero-blocks in a given range.
+after that we add the count of active sections to get the final result.
+Time Complexity: O(q * log n) for processing all queries, O(n) for initialization
+Space Complexity: O(n) for segment tree and auxiliary arrays
+*/
+
+import java.util.*;
 
 class LC3500_MaximizeSelectionII {
     static void buildSegmentTree(int i, int l, int r, int[] segmentTree, int[] arr) {
