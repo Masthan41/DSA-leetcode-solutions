@@ -6,7 +6,7 @@ Time Complexity: O(log n) since we are calculating the smallest power of 2 great
 Space Complexity: O(1) since we are using a constant amount of space to store the answer and the length of the array.
 */
 
-class LC3513_XorTriplets {
+class LC3513_XorTripletsI {
     public int uniqueXorTriplets(int[] nums) {
         int n = nums.length;
         if (n == 1 || n == 2) {
@@ -21,7 +21,7 @@ class LC3513_XorTriplets {
     }
 
     public static void main(String[] a) {
-        LC3513_XorTriplets s = new LC3513_XorTriplets();
+        LC3513_XorTripletsI s = new LC3513_XorTripletsI();
         int[] nums = { 1, 2, 3 };
         System.out.println(s.uniqueXorTriplets(nums));
 
