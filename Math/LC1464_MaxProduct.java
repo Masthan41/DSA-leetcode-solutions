@@ -1,3 +1,10 @@
+/*
+LeetCode 1464 - Maximum Product of Two Elements in an Array
+Approach: Find the two largest elements in the array and calculate their product.
+Time complexity: O(n) as we iterate through the array once
+Space complexity: O(1) as we are using a constant amount of space for the variables
+*/
+
 class LC1464_MaxProduct {
     public int maxProduct(int[] nums) {
         int max1 = Integer.MIN_VALUE;
