@@ -1,3 +1,10 @@
+/*
+LeetCode 3518 - Smallest Palindromic Rearrangement II
+Approach: Constructing the k-th lexicographical palindrome by determining each character of the first half using combinatorics.
+Time complexity: O(n^2 log k) due to the nested loops and the nCr function.
+Space complexity: O(n) for the count array and StringBuilder.
+*/
+
 class LC3518_SmallestRearrangementII {
     long nCr(int n, int r, int k) {
         // nCr == nC(n-r)
