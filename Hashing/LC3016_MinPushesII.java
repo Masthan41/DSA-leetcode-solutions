@@ -1,5 +1,11 @@
-import java.util.Arrays;
-import java.util.Comparator;
+/*
+LeetCode 3016 - Minimum Number of Pushes to Type a String II
+Approach: Use an array to count the frequency of each character in the string. Then, sort the frequencies in descending order and calculate the total pushes required based on the position of each character in the sorted list.
+Time Complexity: O(n log n) due to sorting the frequency array, where n is the length of the string.
+Space Complexity: O(1) since the frequency array has a fixed size of 26 (for each letter of the alphabet).
+*/
+
+import java.util.*;
 
 class LC3016_MinPushesII {
     public int minimumPushes(String word) {
