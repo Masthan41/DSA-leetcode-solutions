@@ -1,4 +1,11 @@
-import java.util.Arrays;
+/*
+LeetCode 877 - Stone Game 
+Approach: Use Memoization, fill the dp table with -1, and recursively calculate the maximum score difference between the two players. The first player tries to maximize their score while the second player tries to minimize it.
+Time Complexity: O(n^2) where n is the length of the piles array, as we are filling a dp table of size n x n.
+Space Complexity: O(n^2) for the dp table and O(n) for the recursion stack.
+*/
+
+import java.util.*;
 
 class LC877_StoneGame {
     int dp[][] = new int[501][501];
