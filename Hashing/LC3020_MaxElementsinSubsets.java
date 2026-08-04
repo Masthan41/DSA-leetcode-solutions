@@ -5,8 +5,9 @@ Time Complexity: O(n) where n is the length of the array
 Space Complexity: O(n) for the HashMap
 */
 
+import java.util.*;
 
-class LC3020_MaxElementsinSubsets{
+class LC3020_MaxElementsinSubsets {
 
     public int maximumLength(int[] nums) {
         Map<Long, Integer> freq = new HashMap<>();
@@ -24,14 +25,16 @@ class LC3020_MaxElementsinSubsets{
         }
 
         for (long x : freq.keySet()) {
-            if (x == 1) continue;
+            if (x == 1)
+                continue;
 
             long cur = x;
             int len = 0;
 
             while (freq.getOrDefault(cur, 0) >= 2) {
                 len += 2;
-                if (cur > 1000000000L) break; // prevent overflow
+                if (cur > 1000000000L)
+                    break; // prevent overflow
                 cur *= cur;
             }
 
@@ -45,6 +48,7 @@ class LC3020_MaxElementsinSubsets{
         }
         return ans;
     }
+
     public static void main(String[] args) {
         LC3020_MaxElementsinSubsets solution = new LC3020_MaxElementsinSubsets();
         int[] nums = { 2, 3, 2, 9, 81 };
