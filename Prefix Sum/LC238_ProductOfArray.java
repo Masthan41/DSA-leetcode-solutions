@@ -7,7 +7,7 @@ Space complexity: O(1) extra space (not counting the output array).
 */
 
 class LC238_ProductOfArray {
-        public int[] productExceptSelf(int[] nums) {
+    public int[] productExceptSelf(int[] nums) {
         int n = nums.length;
         int result[] = new int[n];
         result[0] = 1;
@@ -23,9 +23,10 @@ class LC238_ProductOfArray {
         }
         return result;
     }
+
     public static void main(String[] args) {
         LC238_ProductOfArray obj = new LC238_ProductOfArray();
-        int[] nums = {1, 2, 3, 4};
+        int[] nums = { 1, 2, 3, 4 };
         int[] result = obj.productExceptSelf(nums);
         for (int i : result) {
             System.out.print(i + " ");
