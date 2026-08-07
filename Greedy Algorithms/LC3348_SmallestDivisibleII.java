@@ -5,7 +5,7 @@ Time Complexity: O(n) where n is the length of the input number string.
 Space Complexity: O(n) for storing the remaining factors and constructing the result.
 */
 
-class LC3348_SmallestDivisibleII{
+class LC3348_SmallestDivisibleII {
     private String freeSlotsFiller(long required, int length) {
         StringBuilder str = new StringBuilder();
 
@@ -16,7 +16,7 @@ class LC3348_SmallestDivisibleII{
             }
         }
 
-        while (str.length() < length) {   // pad with 1s
+        while (str.length() < length) { // pad with 1s
             str.append('1');
         }
 
@@ -29,17 +29,18 @@ class LC3348_SmallestDivisibleII{
 
         // Check primes 2,3,5,7
         long temp = t;
-        for (int primeFact : new int[]{2, 3, 5, 7}) {
+        for (int primeFact : new int[] { 2, 3, 5, 7 }) {
             while (temp % primeFact == 0) {
                 temp /= primeFact;
             }
         }
 
-        if (temp != 1) {   // it means there are other primes apart from 2, 3, 5, 7
+        if (temp != 1) { // it means there are other primes apart from 2, 3, 5, 7
             return "-1";
         }
 
-        // Precompute remainingFactor[i] = if we take i digits of num in my result, what factor remaining for t
+        // Precompute remainingFactor[i] = if we take i digits of num in my result, what
+        // factor remaining for t
         long[] remainingFactor = new long[n + 1];
         remainingFactor[0] = t;
         // "123045"
@@ -53,7 +54,7 @@ class LC3348_SmallestDivisibleII{
             remainingFactor[i + 1] = remainingFactor[i] / gcd(remainingFactor[i], digit);
         }
 
-        if (remainingFactor[n] == 1) {   // the input itself is sufficient for t
+        if (remainingFactor[n] == 1) { // the input itself is sufficient for t
             return num;
         }
 
@@ -65,7 +66,7 @@ class LC3348_SmallestDivisibleII{
 
         for (int i = zeroIdx; i >= 0; i--) {
             long required = remainingFactor[i];
-            int freeSlots = n - 1 - i;   // free slots to the right of i
+            int freeSlots = n - 1 - i; // free slots to the right of i
 
             for (int digit = (num.charAt(i) - '0') + 1; digit <= 9; digit++) {
                 long furtherRequired = required / gcd(required, digit);
@@ -77,11 +78,19 @@ class LC3348_SmallestDivisibleII{
             }
         }
 
-        return freeSlotsFiller(t, n + 1);   // num = "11", t = 2^15
+        return freeSlotsFiller(t, n + 1); // num = "11", t = 2^15
     }
 
     // greatest common divisor
     private long gcd(long a, long b) {
         return b == 0 ? a : gcd(b, a % b);
+    }
+
+    public static void main(String[] args) {
+        LC3348_SmallestDivisibleII solution = new LC3348_SmallestDivisibleII();
+        String num = "123045";
+        long t = 12;
+        String result = solution.smallestNumber(num, t);
+        System.out.println(result); // Output: "123045"
     }
 }
