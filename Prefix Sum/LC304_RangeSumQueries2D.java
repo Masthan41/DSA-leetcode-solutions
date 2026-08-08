@@ -1,7 +1,7 @@
 class LC304_RangeSumQueries2D {
     int prefix[][];
 
-    public NumMatrix(int[][] matrix) {
+    public LC304_RangeSumQueries2D(int[][] matrix) {
         prefix = new int[matrix.length + 1][matrix[0].length + 1];
 
         for (int i = 1; i <= matrix.length; i++) {
