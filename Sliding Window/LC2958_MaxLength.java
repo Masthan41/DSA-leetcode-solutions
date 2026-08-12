@@ -1,4 +1,11 @@
-import java.util.HashMap;
+/*
+LeetCode 2958 - Maximum Subarray length with at most K Distinct Elements
+Approach: Use a sliding window technique to maintain a window of size k with all distinct elements, and keep track of the maximum length encountered.
+Time Complexity: O(n) where n is the length of the nums array.
+Space Complexity: O(n) for the HashMap storing at most n elements.
+*/
+
+import java.util.*;
 
 class LC2958_MaxLength {
     public int maxSubarrayLength(int[] nums, int k) {
