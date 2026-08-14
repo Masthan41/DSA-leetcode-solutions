@@ -11,17 +11,14 @@ class LC325_MaxSubarraySize {
     public int maxSubArrayLen(int[] nums, int k) {
         HashMap<Integer, Integer> map = new HashMap<>();
         map.put(0, -1);
-        int ans = 0;
-        int sum = 0;
+        int ans = 0, sum = 0;
+
         for (int i = 0; i < nums.length; i++) {
             sum += nums[i];
-
             if (map.containsKey(sum - k)) {
                 ans = Math.max(ans, i - map.get(sum - k));
             }
-            if (!map.containsKey(sum)) {
-                map.put(sum, i);
-            }
+            map.put(sum, i);
         }
         return ans;
     }
@@ -32,7 +29,7 @@ class LC325_MaxSubarraySize {
         int[] nums = { 1, -1, 5, -2, 3 };
         int k = 3;
 
-        System.out.println(sol.maxSubArrayLen(nums, k)); // Expected: 4
+        System.out.println(sol.maxSubArrayLen(nums, k)); // Expected: 2
     }
 
 }
