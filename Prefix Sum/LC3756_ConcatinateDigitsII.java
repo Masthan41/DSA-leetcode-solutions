@@ -8,6 +8,7 @@ Space Complexity: O(n) for storing prefix sums and counts.
 
 import java.util.*;
 
+class LC3756_ConcatinateDigitsII {
     static final long MOD = 1000000007;
 
     public int[] sumAndMultiply(String s, int[][] queries) {
@@ -73,8 +74,8 @@ import java.util.*;
     public static void main(String[] args) {
         LC3756_ConcatinateDigitsII obj = new LC3756_ConcatinateDigitsII();
         String s = "123045";
-        int[][] queries = {{0, 2}, {1, 4}, {0, 5}};
-        int[] result = obj. s umAn dMul tipl y(s,  que r ies);
+        int[][] queries = { { 0, 2 }, { 1, 4 }, { 0, 5 } };
+        int[] result = obj.sumAndMultiply(s, queries);
         System.out.println("The results for the queries are: " + Arrays.toString(result));
     }
 }
