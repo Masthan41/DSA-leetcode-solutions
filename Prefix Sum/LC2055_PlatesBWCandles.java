@@ -55,4 +55,12 @@ class LC2055_PlatesBWCandles {
         }
         return res;
     }
+
+    public static void main(String[] args) {
+        LC2055_PlatesBWCandles solution = new LC2055_PlatesBWCandles();
+        String s = "**|**|***|";
+        int[][] queries = { { 2, 5 }, { 5, 9 } };
+        int[] result = solution.platesBetweenCandles(s, queries);
+        System.out.println("Number of plates between candles for each query: " + Arrays.toString(result));
+    }
 }
