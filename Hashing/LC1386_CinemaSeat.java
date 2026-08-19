@@ -1,3 +1,12 @@
+/*
+LeetCode 1386 - Cinema Seat Allocation
+Approach: Use a hash map to store the reserved seats for each row. For each row with reserved seats, check which family groups can be allocated.
+Time Complexity: O(m) where m is the number of reserved seats
+Space Complexity: O(m) for the hash map
+*/
+
+import java.util.*;
+
 class LC1386_CinemaSeat {
     public int maxNumberOfFamilies(int n, int[][] reservedSeats) {
         HashMap<Integer, HashSet<Integer>> map = new HashMap<>();
