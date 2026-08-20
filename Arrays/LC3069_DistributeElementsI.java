@@ -1,3 +1,10 @@
+/*
+Leetcode 3069 - Distribute Elements Into Two Arrays I
+Appraoch : Use two arrays to store the elements based on the condition. Iterate through the input array and compare the last elements of both arrays to decide where to place the current element. Finally, combine both arrays into a result array.
+Time Complexity: O(n) for iterating through the input array.
+Space Complexity: O(n) for storing the two arrays and the result array.
+*/
+
 class LC3069_DistributeElementsI {
     public int[] resultArray(int[] nums) {
         int n = nums.length;
