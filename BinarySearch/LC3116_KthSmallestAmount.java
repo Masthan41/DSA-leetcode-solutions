@@ -1,3 +1,11 @@
+/*
+LeetCode 3116 - Kth Smallest Amount with single denomination combination
+Approach: To solve the problem of finding the kth smallest amount, we can use a binary search approach. We search for the kth smallest amount in the range [1, maxCoin * k]. For each candidate amount, we count how many valid amounts are smaller than it using the inclusion-exclusion principle. The number of valid amounts is calculated by considering all possible combinations of coins and their least common multiples.
+Time Complexity: O(log(maxCoin * k) * 2^n * n * log(maxCoin)) where n is the number of coins.
+Space Complexity: O(1) as we are using a constant amount of extra space.    
+*/
+
+
 class LC3116_KthSmallestAmount {
     private long countSmaller(long mid, int[] coins) {
         long correctedCount = 0;
