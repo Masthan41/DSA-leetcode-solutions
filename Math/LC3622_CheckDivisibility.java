@@ -22,6 +22,6 @@ class LC3622_CheckDivisibility {
         LC3622_CheckDivisibility obj = new LC3622_CheckDivisibility();
         int n = 123; // Example input
         boolean result = obj.checkDivisibility(n);
-        System.out.println("Is " + n + " divisible by the sum and product of its digits? " + result);
+        System.out.println(result);
     }
 }
