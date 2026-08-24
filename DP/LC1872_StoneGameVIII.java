@@ -1,3 +1,10 @@
+/*
+LeetCode 1872 - Stone Game VIII
+Approach: We can use dynamic programming to solve this problem. We create an array `dp` where `dp[i]` represents the maximum score difference the current player can achieve from index `i` to the end. We iterate backwards from the last index and calculate the maximum score difference for each index based on the choices of taking or skipping the stone at that index.
+Time Complexity: O(n) since we iterate through the array once.
+Space Complexity: O(n) for the `dp` array.
+*/
+
 class LC1872_StoneGameVIII {
     public int stoneGameVIII(int[] stones) {
         int n = stones.length;
