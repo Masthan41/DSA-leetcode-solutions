@@ -1,3 +1,11 @@
+/*
+LeetCode 2904 - Length of lexicographically smallest beautiful string
+Approach: We use nested loops for checking each substring since the constraints are small
+          (optimized version will be uploadled soon)
+Time Complexity: O(n^2) because of nested loops
+Space Complexity: O(n) beacuse of temp string creation
+*/
+
 class LC2904_BeautifulString {
     public String shortestBeautifulSubstring(String s, int k) {
         int n = s.length();
