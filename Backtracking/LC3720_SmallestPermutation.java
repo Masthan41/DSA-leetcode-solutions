@@ -1,3 +1,10 @@
+/*
+LeetCode 3720 - Lexicographically Smallest Permutation greater than target
+Approach: Use backtracking to generate the smallest permutation that is greater than the target string.
+Time Complexity: O(n!) where n is the length of the input string s.
+Space Complexity: O(n) for the recursion stack and auxiliary data structures.
+*/
+
 class LC3720_SmallestPermutation {
     String result = "";
 
