@@ -1,3 +1,10 @@
+/*
+LeetCode 3734 - Lexicographically Smallest palindromic Permutation greater than target
+Approach: Use backtracking to generate the smallest palindromic permutation that is greater than the target string. The algorithm first checks if a palindromic permutation is possible by counting the frequency of each character. If more than one character has an odd frequency, it returns an empty string. Then, it constructs the left half of the palindrome and uses backtracking to find the lexicographically smallest permutation that is greater than the target.
+Time Complexity: O(n!) where n is the length of the input string s.
+Space Complexity: O(n) for the recursion stack and auxiliary data structures.
+*/
+
 class LC3734_PalindromicPermutation {
     String result = "";
     char midChar = '$';
