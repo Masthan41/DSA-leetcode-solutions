@@ -1,7 +1,12 @@
-import java.util.Arrays;
-import java.util.HashMap;
-import java.util.LinkedList;
-import java.util.Map;
+/*
+LeetCode 2948 - Lexicographically Smallest Array After By swapping elements
+Approach: Use a greedy approach to group the elements based on the limit. Sort the array and create groups of elements that can be swapped with each other. Then, for each element in the original array, replace it with the smallest available element from its corresponding group.
+
+Time complexity: O(n log n) due to sorting the array and O(n) for grouping and replacing elements, resulting in an overall time complexity of O(n log n).
+Space complexity: O(n) for storing the groups and mappings.
+*/
+
+import java.util.*;
 
 class LC2948_SmallestArray {
     public int[] lexicographicallySmallestArray(int[] nums, int limit) {
