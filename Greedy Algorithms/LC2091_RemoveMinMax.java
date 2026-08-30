@@ -1,3 +1,10 @@
+/*
+LeetCode 2091 - Removing minimum and maximum from array
+Approach: Find the indices of the minimum and maximum elements, then calculate the minimum deletions required by considering different strategies for removing elements from either end of the array.
+Time Complexity: O(n) as we iterate through the stones array once.
+Space Complexity: O(1) as we use a fixed number of variables to store indices and counts.
+*/
+
 class LC2091_RemoveMinMax {
     public int minimumDeletions(int[] nums) {
         int n = nums.length;
