@@ -1,3 +1,11 @@
+/*
+Leetcode - 2058 : Find the Minimum and Maximum Number of Nodes Between Critical Points
+Approach:Iteratively traverse the linked list and identify critical points (local maxima or minima).
+Track the positions of these critical points and calculate the minimum and maximum distances between them.
+Time Complexity: O(n) as we traverse the linked list once.
+Space Complexity: O(1) as we dont use any extra space
+*/
+
 class ListNode {
     int val;
     ListNode next;
