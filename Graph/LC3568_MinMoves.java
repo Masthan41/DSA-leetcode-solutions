@@ -1,3 +1,11 @@
+/*
+LeetCode 3568 - Minimum Moves to clean classroom
+Approach: Use BFS to explore all possible states of the robot in the classroom. Each state is defined by the robot's current position, remaining energy, and the set of litter collected. The BFS explores all valid moves (up, down, left, right) while keeping track of visited states to avoid cycles. The goal is to find the minimum number of moves required to collect all litter.
+
+Time Complexity: O(m * n * E * 2^L) where m is the number of rows, n is the number of columns, E is the maximum energy, and L is the number of litter pieces. This accounts for all possible states in the BFS.
+Space Complexity: O(m * n * E * 2^L) for the visited array and O(m * n) for the classroom grid.
+*/
+
 import java.util.*;
 
 class LC3568_MinMoves {
