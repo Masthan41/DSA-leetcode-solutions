@@ -11,7 +11,6 @@ class LC3875_UniformParityI {
     }
 
     public static void main(String[] a) {
-
         LC3875_UniformParityI solution = new LC3875_UniformParityI();
         int[] nums1 = { 1, 2, 3, 4 };
         System.out.println(solution.uniformArray(nums1));
