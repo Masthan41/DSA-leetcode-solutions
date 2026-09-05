@@ -6,7 +6,7 @@ Time Complexity: O(n) where n is the length of the array nums. We traverse the a
 Space Complexity: O(n) as we are using two additional arrays of size n to store the prefix and suffix values.
 */
 
-class LC3904_StableIndexII{
+class LC3904_StableIndexII {
     public int firstStableIndex(int[] nums, int k) {
         int n = nums.length;
 
@@ -29,7 +29,12 @@ class LC3904_StableIndexII{
         }
         return -1;
     }
-    public static void main(String[] a){
-        LC
+
+    public static void main(String[] a) {
+        LC3904_StableIndexII solution = new LC3904_StableIndexII();
+        int[] nums = { 1, 3, 2, 4, 5 };
+        int k = 2;
+        int result = solution.firstStableIndex(nums, k);
+        System.out.println("First stable index: " + result);
     }
 }
