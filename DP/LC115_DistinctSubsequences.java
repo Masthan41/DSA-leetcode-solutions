@@ -1,3 +1,10 @@
+LeetCode 115 - Distinct Subsequences
+Approach: We can use dynamic programming to solve this problem. We will create a 2D array dp where dp[i][j] represents the number of distinct subsequences of the first i characters of string s that equals the first j characters of string t.
+Time Complexity: O(m * n) where m is the length of string s and n is the length of string t, as we need to fill the dp array of size (m+1) x (n+1).
+Space Complexity: O(m * n) for the dp array.
+*/
+
+
 class LC115_DistinctSubsequences {
     long dp[][] = new long[1001][1001];
 
