@@ -5,7 +5,6 @@ Time complexity: O(n) because all elements are being push and poped once.
 Space complexity: O(n) due to the stack.
 */
 
-
 import java.util.Stack;
 
 class LC1475_FinalPrices {
