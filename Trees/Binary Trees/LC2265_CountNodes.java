@@ -1,4 +1,13 @@
+/* 
+LeetCode 2265 - Count Nodes Equal to avg of subtree
+Approach: Use a recursive approach to calculate the sum and count of each subtree. For each node, calculate the average of its subtree and compare it with the node's value.
+
+Time Complexity: O(n) where n is the number of nodes in the tree, as we visit each node once.
+Space Complexity: O(h) where h is the height of the tree, due to the recursion stack.
+*/
+
 import javax.swing.tree.TreeNode;
+import java.util.*;
 
 class LC2265_CountNodes {
     private int result;
