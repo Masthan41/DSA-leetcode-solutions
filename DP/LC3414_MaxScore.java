@@ -1,3 +1,10 @@
+/*
+LeetCode 3414 - Maximum Score from Non-Overlapping Intervals
+Approach: Dynamic Programming (2D DP to track intervals and number of intervals taken, binary search for next non-overlapping interval)
+Time complexity: O(n log n) for sorting and binary search, where n is the number of intervals
+Space complexity: O(n * K) for the DP array, where K is the maximum number of intervals that can be taken (in this case, 4)
+*/
+
 import java.util.*;
 
 class LC3414_MaxScore {
