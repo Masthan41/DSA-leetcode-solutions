@@ -1,3 +1,12 @@
+/*
+Leetcode 2463 - Max non overlapping palindrome substrings
+Appraoch : We can use dynamic programming to solve this problem. We will create a 2D boolean array isPalindrome where isPalindrome[i][j] will be true if the substring s[i..j] is a palindrome. We will fill this array using a nested loop. Then, we will create a 1D array t where t[len] represents the maximum number of non-overlapping palindromic substrings of length len. We will iterate through the string and for each length len, we will check all possible starting indices i and ending index j such that j - i + 1 >= k. If the substring s[i..j] is a palindrome, we will update t[len] to be the maximum of its current value and 1 + t[i]. Finally, we will return t[n] where n is the length of the string.
+
+Time Complexity: O(n^2) where n is the length of the string. We need to fill the isPalindrome array which takes O(n^2) time and then we need to iterate through the string again to fill the t array which also takes O(n^2) time.
+
+Space Complexity: O(n^2) for the isPalindrome array and O(n) for the t array. Overall, the space complexity is O(n^2).
+*/
+
 class LC2472_MaxSubstrings {
     boolean[][] isPalindrome;
     int[] t;
