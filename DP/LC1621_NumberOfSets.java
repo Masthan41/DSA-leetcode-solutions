@@ -1,3 +1,11 @@
+/*
+LeetCode 1621 - Number of Sets of K Non-Overlapping Line Segments
+Approach: Use combinatorial mathematics to calculate the number of ways to choose k non-overlapping line segments from n points. The problem can be reduced to finding the number of ways to place k segments among n points, which can be represented using combinations. The formula used is C(n + k - 1, 2 * k), where C is the binomial coefficient.
+
+Time Complexity: O(n + k) for precomputing factorials and inverse factorials, and O(1) for calculating the binomial coefficient using the precomputed values.
+Space Complexity: O(n + k) for storing factorials and inverse factorials.
+*/
+
 import java.util.*;
 
 class LC1621_NumberOfSets {
