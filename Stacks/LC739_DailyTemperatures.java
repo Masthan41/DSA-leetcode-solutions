@@ -1,3 +1,10 @@
+/*
+LeetCode 739 - Daily Temperatures
+Approach: Use a Stack to find the next greater element and subtract it from current index
+Time complexity: O(n) as each element is pushed and popped from the stack at most once.
+Space complexity: O(n) as we are using a stack.
+*/
+
 import java.util.*;
 
 public class LC739_DailyTemperatures {

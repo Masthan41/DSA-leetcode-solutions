@@ -1,3 +1,10 @@
+/*
+LeetCode 496 - Next Greater Element I
+Approach: Use a stack to store next greater element of nums2 array and map it with the element, after that directly return answer with O(1) average time complexity
+Time complexity: O(n) as each element is pushed and popped from the stack at most once.
+Space complexity: O(n) as we are using a stack and hashmap.
+*/
+
 import java.util.*;
 
 public class LC496_NextGreaterElementI {
