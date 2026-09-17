@@ -4,6 +4,7 @@ Approach: Use a stack and a pair of price and span in this just calculate the sp
 Time complexity: O(n) as each element is pushed and popped from the stack at most once.
 Space complexity: O(n) as we are using a stack and 2 length of fixed array.
 */
+import java.util.*;
 
 class LC901_StockSpan {
     Stack<int[]> s;
