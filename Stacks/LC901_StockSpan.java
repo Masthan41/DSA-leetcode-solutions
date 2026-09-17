@@ -5,7 +5,7 @@ Time complexity: O(n) as each element is pushed and popped from the stack at mos
 Space complexity: O(n) as we are using a stack and 2 length of fixed array.
 */
 
-class LC901_StockSpan{
+class LC901_StockSpan {
     Stack<int[]> s;
 
     public LC901_StockSpan() {
@@ -22,7 +22,8 @@ class LC901_StockSpan{
         s.push(new int[] { price, span });
         return span;
     }
-    public static void main(String[] a){
+
+    public static void main(String[] a) {
         LC901_StockSpan obj = new LC901_StockSpan();
         System.out.println(obj.next(100));
         System.out.println(obj.next(80));
