@@ -1,3 +1,4 @@
+
 /*
 LeetCode 901 - Online Stock Span
 Approach: Use a stack and a pair of price and span in this just calculate the span and return it.
