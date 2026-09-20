@@ -6,6 +6,8 @@ Time Complexity: O(n) as each element is pushed and popped from the stack at mos
 Space Complexity: O(n) for the stack and string builder used to build the result.
 */
 
+import java.util.*;
+
 class LC402_RemoveKDigits {
     public String removeKdigits(String num, int k) {
         Stack<Character> s = new Stack<>();
