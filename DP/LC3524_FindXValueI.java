@@ -1,3 +1,10 @@
+/*
+LeetCode 3524 - Find X Value in array I
+Approach: Dynamic Programming (1D DP to track the count of subarrays with specific remainders)
+Time complexity: O(n * k) where n is the length of the input array and k is the divisor for remainders.
+Space complexity: O(k) for the DP arrays used to track counts of subarrays with specific remainders.
+*/
+
 class LC3524_FindXValueI {
     public long[] resultArray(int[] nums, int k) {
         int n = nums.length;
