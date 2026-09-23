@@ -1,4 +1,11 @@
-import java.util.Stack;
+/*
+LeetCode 1673 - Find the Most Competitive Subsequence
+Approach: Use a stack to maintain the most competitive subsequence. For each number, we pop from the stack if the current number is smaller than the top of the stack and if we can still form a subsequence of length k with the remaining numbers.
+Time complexity: O(n) because each element is pushed and popped from the stack at most once.
+Space complexity: O(k) because the stack will hold at most k elements.
+*/
+
+import java.util.*;
 
 class LC1673_FindSubsequence {
     public int[] mostCompetitive(int[] nums, int k) {
