@@ -1,7 +1,11 @@
-import java.util.ArrayList;
-import java.util.List;
-import java.util.Set;
-import java.util.TreeSet;
+/*
+LeetCode 1096 - Brace Expansion II
+Approach: We can use a recursive approach to solve this problem. The idea is to parse the expression and handle the union and concatenation operations accordingly. We will use a helper function to perform the union of sets and another helper function to perform the concatenation of sets. The main function will call these helper functions based on the current character in the expression.
+Time Complexity: O(n * m) where n is the length of the expression and m is the number of unique strings generated. The union and concatenation operations can take time proportional to the number of unique strings generated.
+Space Complexity: O(m) where m is the number of unique strings generated. We use a TreeSet to store the unique strings, which can take up space proportional to the number of unique strings.
+*/
+
+import java.util.*;
 
 class LC1096_BraceExpansionII {
     String s;
