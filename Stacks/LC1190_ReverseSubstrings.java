@@ -1,4 +1,11 @@
-import java.util.Stack;
+/*
+LeetCode 1190 - Reverse substrings between each pair of parentheses 
+Approach: Two-pass algorithm with a stack to keep track of the indices of the open parentheses. after that, we can use the door array to jump between matching parentheses and build the result string in the correct order.
+Time complexity: O(n) where n is the length of the input string
+Space complexity: O(n) for the stack and the door array
+*/
+
+import java.util.*;
 
 class LC1190_ReverseSubstrings {
     public String reverseParentheses(String s) {
