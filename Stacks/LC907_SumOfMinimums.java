@@ -1,3 +1,11 @@
+/*
+LeetCode 907 - Sum of Subarray Minimums
+Approach: Use a stack to find the next smaller element to the left and right for each element in the array. Then, calculate the contribution of each element as the minimum of all subarrays that include it. The contribution is determined by the number of subarrays that can be formed with the current element as the minimum, which is calculated using the indices of the next smaller elements.
+
+Time complexity: O(n) as each element is pushed and popped from the stack at most once.
+Space complexity: O(n) as we are using two stacks and two arrays to store the indices of the next smaller elements.
+*/
+
 import java.util.*;
 
 class LC907_SumOfMinimums {
@@ -14,7 +22,7 @@ class LC907_SumOfMinimums {
             NSL[i] = left.isEmpty() ? -1 : left.peek();
             left.push(i);
         }
-        
+
         // Find the index of the next smaller element to the right (NSR)
         Stack<Integer> right = new Stack<>();
         int NSR[] = new int[n];
