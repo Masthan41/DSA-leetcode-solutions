@@ -1,37 +1,37 @@
 /*
 LeetCode 22 - Generate Parentheses
 Approach: Backtracking with constraints
-Time complexity: O(2^n)
-Space complexity: O(n)
+Time complexity: O(2^n) as we are expolring every possibility
+Space complexity: O(n) as we are using a new arraylist
 */
 
 import java.util.*;
 
 class LC22_GenerateParentheses {
 
-    public List<String> generateParenthesis(int n) {
-        List<String> res = new ArrayList<>();
-        backtrack(res, new StringBuilder(), 0, 0, n);
-        return res;
-    }
+    private List<String> result = new ArrayList<>();
 
-    private void backtrack(List<String> res, StringBuilder sb, int open, int close, int n) {
-        if (sb.length() == 2 * n) {
-            res.add(sb.toString());
+    private void solve(int n, String curr, int open, int close) {
+        if (curr.length() == 2 * n) {
+            result.add(curr);
             return;
         }
 
         if (open < n) {
-            sb.append('(');
-            backtrack(res, sb, open + 1, close, n);
-            sb.deleteCharAt(sb.length() - 1);
+            curr += '(';
+            solve(n, curr, open + 1, close);
+            curr = curr.substring(0, curr.length() - 1);
         }
-
         if (close < open) {
-            sb.append(')');
-            backtrack(res, sb, open, close + 1, n);
-            sb.deleteCharAt(sb.length() - 1);
+            curr += ')';
+            solve(n, curr, open, close + 1);
+            curr = curr.substring(0, curr.length() - 1);
         }
+    }
+
+    public List<String> generateParenthesis(int n) {
+        solve(n, "", 0, 0);
+        return result;
     }
     public static void main(String[] args) {
         LC22_GenerateParentheses sol = new LC22_GenerateParentheses();
