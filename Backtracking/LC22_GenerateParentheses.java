@@ -33,6 +33,7 @@ class LC22_GenerateParentheses {
         solve(n, "", 0, 0);
         return result;
     }
+    
     public static void main(String[] args) {
         LC22_GenerateParentheses sol = new LC22_GenerateParentheses();
         int n = 3;
