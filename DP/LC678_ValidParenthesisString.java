@@ -1,3 +1,13 @@
+/*
+LeetCode 678 - Valid Parenthesis String
+Approach: We can use a recursive approach with memoization to solve this problem. We will keep track of the current index in the string and the number of open parentheses. At each step, we have three choices for the current character as given in question
+
+Time Complexity: O(n^2) as we are iterating through the string and for each character, we are making three recursive calls. The memoization will help us avoid recalculating the same state multiple times.
+Space Complexity: O(n^2) for the memoization table and O(n) for the recursion stack.
+*/
+
+//although this can be solved using bottom up DP, stacks and iteratively also, i have mentioned here the recursion + memoization version
+
 import java.util.*;
 
 class LC678_ValidParenthesisString {
