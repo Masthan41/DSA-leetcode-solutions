@@ -1,8 +1,8 @@
 /*
 LeetCode 921 - Minimum Add to Make Parentheses Valid
 Approach: Greedy counting of unmatched brackets
-Time complexity: O(n)
-Space complexity: O(1)
+Time complexity: O(n) as we are traversing the string once
+Space complexity: O(1) as we dont use any extra space
 */
 
 class LC921_MinAddToMakeValid {
