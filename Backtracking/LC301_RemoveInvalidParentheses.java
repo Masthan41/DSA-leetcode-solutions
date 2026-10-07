@@ -1,3 +1,10 @@
+/*
+LeetCode 301 - Remove Invalid Parentheses
+Approach: Backtracking with pruning based on the count of parentheses. check if the current string is valid and keep track of the maximum length of valid strings found.
+Time Complexity: O(2^n) in the worst case, where n is the length of the input string. This is because each character can either be included or excluded.
+Space Complexity: O(n) for the recursion stack and the storage of valid strings in the set.
+*/
+
 import java.util.ArrayList;
 import java.util.HashSet;
 import java.util.List;
