@@ -1,3 +1,11 @@
+/*
+LeetCode 496 - Next Greater Element IV
+Approach: Use two stacks to find the second greater element for each number in the array. The first stack keeps track of indices of elements for which we are looking for the next greater element, while the second stack keeps track of indices of elements for which we are looking for the second greater element.
+
+Time complexity: O(n) as each element is pushed and popped from the stacks at most once.
+Space complexity: O(n) as we are using two stacks to store indices of elements.
+*/
+
 import java.util.Arrays;
 import java.util.Stack;
 
