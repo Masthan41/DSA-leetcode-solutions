@@ -5,7 +5,7 @@ Time Complexity: O(n log n) as we are adding all the stones to the heap and remo
 Space Complexity: O(n) for the heap.
 */
 
-imoprt java.util.*;
+import java.util.*;
 
 class LC1046_LastStoneWeight {
     public int lastStoneWeight(int[] stones) {
