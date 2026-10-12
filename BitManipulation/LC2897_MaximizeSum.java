@@ -1,5 +1,5 @@
 /*
-LeetCode 2897 - Apply operations to on array to Maximize sum of Squares
+LeetCode 2897 - Apply operations on array to Maximize sum of Squares
 Approach: We want to maximize the sum of squares of the array elements. To do this, we should always choose the element with the highest absolute value to square it. We can use a max-heap to efficiently find and update the largest element.
 
 Time Complexity: O(n+k) as we need to process each element in the array and perform k operations.
