@@ -9,18 +9,30 @@ import java.util.*;
 
 class LC973_KClosestPointsToOrigin {
     public int[][] kClosest(int[][] points, int k) {
-        PriorityQueue<int[]> pq = new PriorityQueue<>(
-                (a, b) -> (b[0] * b[0] + b[1] * b[1]) - (a[0] * a[0] + a[1] * a[1]));
-        for (int pt[] : points) {
-            pq.add(pt);
+        int n = points.length;
+        int m = points[0].length;
+
+        PriorityQueue<int[]> pq = new PriorityQueue<>((a, b) -> Integer.compare(b[0], a[0]));
+
+        for (int i = 0; i < n; i++) {
+            int x = points[i][0];
+            int y = points[i][1];
+            int distance = x * x + y * y;
+
+            pq.add(new int[] { distance, i });
 
             if (pq.size() > k) {
-                pq.poll();
+                pq.remove();
             }
         }
+
         int res[][] = new int[k][2];
         for (int i = 0; i < k; i++) {
-            res[i] = pq.poll();
+            int curr[] = pq.peek();
+            int idx = curr[1];
+            pq.remove();
+
+            res[i] = points[idx];
         }
         return res;
     }
