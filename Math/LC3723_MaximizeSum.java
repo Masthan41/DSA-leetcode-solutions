@@ -1,3 +1,11 @@
+/*
+LeetCode 3723 - Maximize sum of squares of digits 
+Approach: To maximize the sum of squares of digits for a given number of digits `num` and a total sum `sum`, we can use a greedy approach. The idea is to fill the number with the largest possible digits starting from the leftmost position. Since the digit '9' contributes the most to the sum of squares, we will use as many '9's as possible until we reach the required sum. If there is any remaining sum after using '9's, we will place that remaining value in the next position. Finally, if there are still positions left, we will fill them with '0's.
+
+Time Complexity: O(num) where num is the number of digits, as we need to construct
+Space Complexity: O(num) where num is the number of digits, as we need to store the resulting string.
+*/
+
 class LC3723_MaximizeSum {
     public String maxSumOfSquares(int num, int sum) {
         if (sum > num * 9) {
