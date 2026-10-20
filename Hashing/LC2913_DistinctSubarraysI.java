@@ -7,7 +7,7 @@ Space Complexity: O(n) for the HashSet used to track distinct elements in each s
 
 import java.util.*;
 
-class LC2913_DistinctSubarrays {
+class LC2913_DistinctSubarraysI {
     public int sumCounts(List<Integer> nums) {
         int n = nums.size();
         int sub = 0;
@@ -24,7 +24,7 @@ class LC2913_DistinctSubarrays {
     }
 
     public static void main(String[] args) {
-        LC2913_DistinctSubarrays obj = new LC2913_DistinctSubarrays();
+        LC2913_DistinctSubarraysI obj = new LC2913_DistinctSubarraysI();
         List<Integer> nums = List.of(1, 2, 3);
         System.out.println(obj.sumCounts(nums));
     }
