@@ -9,28 +9,27 @@ import java.util.*;
 
 class LC347_TopKFrequentElements {
     public int[] topKFrequent(int[] nums, int k) {
-        Map<Integer, Integer> map = new HashMap<>();
-
-        // count frequency
-        for (int i : nums) {
-            map.put(i, map.getOrDefault(i, 0) + 1);
+        int n = nums.length;
+        HashMap<Integer, Integer> map = new HashMap<>();
+        for (int num : nums) {
+            map.put(num, map.getOrDefault(num, 0) + 1);
         }
 
-        // Min heap based on frequency
-        PriorityQueue<Integer> pq = new PriorityQueue<>(
-                (a, b) -> map.get(a) - map.get(b));
-        for (int key : map.keySet()) {
-            pq.add(key);
+        PriorityQueue<int[]> pq = new PriorityQueue<>((a, b) -> Integer.compare(a[1], b[1]));
+        for (Map.Entry<Integer, Integer> entry : map.entrySet()) {
+            pq.add(new int[] { entry.getKey(), entry.getValue() });
+
             if (pq.size() > k) {
-                pq.poll();
+                pq.remove();
             }
         }
-        // take out the result
-        int res[] = new int[k];
+
+        int ans[] = new int[k];
         for (int i = 0; i < k; i++) {
-            res[i] = pq.poll();
+            int curr[] = pq.remove();
+            ans[i] = curr[0];
         }
-        return res;
+        return ans;
     }
 
     public static void main(String[] args) {
