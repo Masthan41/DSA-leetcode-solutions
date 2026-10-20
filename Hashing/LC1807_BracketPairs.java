@@ -1,9 +1,11 @@
+
 /*
 LeetCode 1807 - Evaluate the bracket pairs of a string
 Approach: Use a hash map to store the key-value pairs from the knowledge list. Iterate through the string and whenever a '(' is encountered, find the corresponding ')' and extract the substring between them. Check if this substring exists in the hash map and append the corresponding value to the result. If it doesn't exist, append '?' instead. Continue this process until the end of the string.
 Time Complexity: O(n + m) where n is the length of the string and m is the number of key-value pairs in the knowledge list
 Space Complexity: O(m) for the hash map
 */
+import java.util.*;
 
 class LC1807_BracketPairs {
     public String evaluate(String s, List<List<String>> knowledge) {
