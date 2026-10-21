@@ -19,10 +19,11 @@ class LC3838_WeightedWord {
         return sb.toString();
     }
 
-    public static void public static void main(String[] args) {
+    public static void main(String[] args) {
         LC3838_WeightedWord obj = new LC3838_WeightedWord();
-        String[] words = {"abc", "bcd"};
-        int[] weights = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26};
+        String[] words = { "abc", "bcd" };
+        int[] weights = { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25,
+                26 };
         System.out.println(obj.mapWordWeights(words, weights));
     }
 }
