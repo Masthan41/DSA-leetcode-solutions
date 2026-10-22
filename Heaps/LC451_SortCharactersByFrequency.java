@@ -1,8 +1,8 @@
 /*
 LeetCode 451 - Sort Characters By Frequency
 Approach: HashMap Frequency Counting + Max Heap
-Time Complexity: O(n log n)
-Space Complexity: O(n)
+Time Complexity: O(n log n) as we are using a priority queue to sort the characters based on their frequency.
+Space Complexity: O(n) as we are using a HashMap to store the frequency of each character and a priority queue to sort them.
 */
 
 import java.util.*;
