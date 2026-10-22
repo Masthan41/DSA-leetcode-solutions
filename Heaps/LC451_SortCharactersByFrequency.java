@@ -9,31 +9,29 @@ import java.util.*;
 
 class LC451_SortCharactersByFrequency {
     public String frequencySort(String s) {
+        int n = s.length();
         HashMap<Character, Integer> map = new HashMap<>();
 
-        // Step 1: Count frequency
-        for (char c : s.toCharArray()) {
-            map.put(c, map.getOrDefault(c, 0) + 1);
+        for (int i = 0; i < n; i++) {
+            map.put(s.charAt(i), map.getOrDefault(s.charAt(i), 0) + 1);
         }
 
-        // Step 2: Max heap based on freq
-        PriorityQueue<Character> pq = new PriorityQueue<>((a, b) -> map.get(b) - map.get(a));
+        PriorityQueue<Map.Entry<Character, Integer>> pq = new PriorityQueue<>((a, b) -> b.getValue() - a.getValue());
 
-        pq.addAll(map.keySet());
+        for (Map.Entry<Character, Integer> entry : map.entrySet()) {
+            pq.add(entry);
+        }
 
-        //Step 3: result
         StringBuilder sb = new StringBuilder();
-
         while (!pq.isEmpty()) {
-            char ch = pq.poll();
-            int freq = map.get(ch);
-
-            while (freq-- > 0) {
-                sb.append(ch);
+            Map.Entry<Character, Integer> temp = pq.remove();
+            for (int i = 0; i < temp.getValue(); i++) {
+                sb.append(temp.getKey());
             }
         }
         return sb.toString();
     }
+
     public static void main(String[] args) {
         LC451_SortCharactersByFrequency obj = new LC451_SortCharactersByFrequency();
         String s = "tree";

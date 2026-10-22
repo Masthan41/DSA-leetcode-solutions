@@ -1,0 +1,260 @@
+[33mcommit 2614b405438391dfea7be09282f206a87d298af5[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mmain[m[33m, [m[1;31morigin/main[m[33m, [m[1;31morigin/HEAD[m[33m)[m
+Author: MdMasthan41 <mdmastan633@gmail.com>
+Date:   Wed Oct 21 19:43:13 2026 +0530
+
+    Added Weighted word mapping code
+
+[33mcommit 1352d8d548e21f77d447cbad9787ec3d3bef627b[m
+Author: MdMasthan41 <mdmastan633@gmail.com>
+Date:   Wed Oct 21 19:42:34 2026 +0530
+
+    Added Kth smallest element in a sorted matrix code
+
+[33mcommit 69300f2321934e53e2fe51b62764e8280d1c3901[m
+Author: MdMasthan41 <mdmastan633@gmail.com>
+Date:   Wed Oct 21 19:39:23 2026 +0530
+
+    Added Minimum operation to make a string sorted code
+
+[33mcommit 307976e3bb31b5530ed3e88ce6e714d8b5ac9126[m
+Author: MdMasthan41 <mdmastan633@gmail.com>
+Date:   Tue Oct 20 21:29:55 2026 +0530
+
+    Added Sum of sortable integers code
+
+[33mcommit bbb608e06687b91d11f6ada7b2d8e5fe19b7e744[m
+Author: MdMasthan41 <mdmastan633@gmail.com>
+Date:   Tue Oct 20 21:21:24 2026 +0530
+
+    Added Find target indices after sorting array code
+
+[33mcommit aae2a3dce9c4f1a52ce0f82d68a604069d8beb14[m
+Author: MdMasthan41 <mdmastan633@gmail.com>
+Date:   Tue Oct 20 21:19:21 2026 +0530
+
+    Added No of ways to reorder array to get same BST code
+
+[33mcommit bacf6af82862059a68587f7536b1225af7df6e83[m
+Author: MdMasthan41 <mdmastan633@gmail.com>
+Date:   Tue Oct 20 21:17:12 2026 +0530
+
+    Added Min swaps to sort by digit sum code
+
+[33mcommit 9ad6bee71dea4c031c50712cd828e8753039fb44[m
+Author: MdMasthan41 <mdmastan633@gmail.com>
+Date:   Tue Oct 20 20:15:56 2026 +0530
+
+    Added Distinct Subarrays elements sum of squares II code
+
+[33mcommit 34e48b7ba14063d05e014ae7e6228823d796e8a8[m
+Author: MdMasthan41 <mdmastan633@gmail.com>
+Date:   Tue Oct 20 20:12:12 2026 +0530
+
+    Added Distinct Subarrays elements sum of squares I code
+
+[33mcommit a363058bddfe4324ce38349e3b0b034a5a66e6a5[m
+Author: MdMasthan41 <mdmastan633@gmail.com>
+Date:   Tue Oct 20 20:06:09 2026 +0530
+
+    Added Top K Frequent Elements in array code
+
+[33mcommit 2acd1711376fae2685e96f331638106e519fe61e[m
+Author: Md Masthan <mdmastan633@gmail.com>
+Date:   Wed Oct 14 21:25:11 2026 +0530
+
+    Added Maximize sum of squares of digits code
+
+[33mcommit 6345a43f8e78b030c2428f4e458578a1663d51c1[m
+Author: Md Masthan <mdmastan633@gmail.com>
+Date:   Wed Oct 14 21:24:08 2026 +0530
+
+    Added Maximize sum of squares of digits code
+
+[33mcommit ea0052b7231aa279a177e211c55c612b33283cd9[m
+Author: Md Masthan <mdmastan633@gmail.com>
+Date:   Tue Oct 13 22:53:11 2026 +0530
+
+    Added Max alternating sum of squares code
+
+[33mcommit fd81c362657cfaff7686f931f0afb13d49cbd50a[m
+Author: Md Masthan <mdmastan633@gmail.com>
+Date:   Tue Oct 13 22:49:57 2026 +0530
+
+    Added K Closest points to origin code
+
+[33mcommit b0f0004e47a6a47d57369ffe80634c44ca10b5fa[m
+Author: Md Masthan <mdmastan633@gmail.com>
+Date:   Mon Oct 12 19:30:59 2026 +0530
+
+    Added K weakest rows in a matrix code
+
+[33mcommit ca386dbc52ce71d638cbdf91757e0299b8b034f0[m
+Author: Md Masthan <mdmastan633@gmail.com>
+Date:   Mon Oct 12 19:28:32 2026 +0530
+
+    Added Apply operations on an array to maximize Sum of square  code
+
+[33mcommit 45134b3f2c99c1dbcf37225e48611cee328ef188[m
+Author: Md Masthan <mdmastan633@gmail.com>
+Date:   Mon Oct 12 19:28:24 2026 +0530
+
+    Added Apply operations on an array to maximize Sum of square  code
+
+[33mcommit 1163fd8ecaa962a8c7116a01c96488841bf36a77[m
+Author: Md Masthan <mdmastan633@gmail.com>
+Date:   Sun Oct 11 22:23:04 2026 +0530
+
+    Added Sum of squares of speacial elements code
+
+[33mcommit 0ac1b99974a0f6f136919f1c7ee00b49bb92b4bc[m
+Author: Md Masthan <mdmastan633@gmail.com>
+Date:   Sun Oct 11 22:13:01 2026 +0530
+
+    Added Relative Rank code
+
+[33mcommit c3b9ec11d73496cf52daf9db89e22a40df4f2f58[m
+Author: Md Masthan <mdmastan633@gmail.com>
+Date:   Sun Oct 11 22:09:29 2026 +0530
+
+    Added Last stone weight code
+
+[33mcommit 24eb12978fc4157ce285c3c8f0492a746cbcd0d4[m
+Author: Md Masthan <mdmastan633@gmail.com>
+Date:   Sat Oct 10 21:48:01 2026 +0530
+
+    Added Kth largest element in stream code
+
+[33mcommit 2eea6a7cc1d61c6e92b283b89dd59e63c4d9e818[m
+Author: Md Masthan <mdmastan633@gmail.com>
+Date:   Sat Oct 10 21:46:32 2026 +0530
+
+    Added min sum of squared diffrences code
+
+[33mcommit 5f97ff62f5d74cd22223a586690b099e924188aa[m
+Author: Md Masthan <mdmastan633@gmail.com>
+Date:   Fri Oct 9 21:33:53 2026 +0530
+
+    Added min insertions to balance a parentheses string code
+
+[33mcommit 1469ab6cb506c0c8fe4d566b4bd8edb39dc5d280[m
+Author: Md Masthan <mdmastan633@gmail.com>
+Date:   Fri Oct 9 20:05:23 2026 +0530
+
+    Added Valid subarray count code
+
+[33mcommit a141982eabdd3f1badc04dfec13dc74d7fcaee92[m
+Author: Md Masthan <mdmastan633@gmail.com>
+Date:   Thu Oct 8 22:08:28 2026 +0530
+
+    Added Next Greater elemnt IV code
+
+[33mcommit 886786679c59809fc501a0c76d512790bc6f01d4[m
+Author: Md Masthan <mdmastan633@gmail.com>
+Date:   Thu Oct 8 22:07:30 2026 +0530
+
+    Added Next Greater elemnt IV code
+
+[33mcommit 545bafd357296b7ccd269949e3313417e152aec5[m
+Author: Md Masthan <mdmastan633@gmail.com>
+Date:   Wed Oct 7 21:54:35 2026 +0530
+
+    Added Remove invalid parentheses code
+
+[33mcommit 7e3d1791a5a404d7e1a48b6d0547329f9ccb7e14[m
+Author: Md Masthan <mdmastan633@gmail.com>
+Date:   Wed Oct 7 21:52:27 2026 +0530
+
+    Added Remove invalid parentheses code
+
+[33mcommit 3d9a088a71240353f6e18d47ab1246e685d8dd8e[m
+Author: Md Masthan <mdmastan633@gmail.com>
+Date:   Tue Oct 6 22:17:25 2026 +0530
+
+    Added minimum to add to make valid parentheses code
+
+[33mcommit 4c557eec55308d77b5dd2ff938232e6b597809be[m
+Author: Md Masthan <mdmastan633@gmail.com>
+Date:   Tue Oct 6 22:16:28 2026 +0530
+
+    Added minimum to add to make valid parentheses code
+
+[33mcommit 677eea3b2c4500e89ae47771c954a4f5f8756969[m
+Author: Md Masthan <mdmastan633@gmail.com>
+Date:   Mon Oct 5 22:34:25 2026 +0530
+
+    Added Score of parentheses code
+
+[33mcommit afdedf46ec92a2756b5b8c185523b8a67684e8a0[m
+Author: Md Masthan <mdmastan633@gmail.com>
+Date:   Mon Oct 5 22:32:09 2026 +0530
+
+    Added Score of parentheses code
+
+[33mcommit 79ab5d3f6d3cebf31aa9ac7a9e6b47fd8ee5e8b5[m
+Author: Md Masthan <mdmastan633@gmail.com>
+Date:   Sun Oct 4 21:51:33 2026 +0530
+
+    Added Valid Parenthesis String  code
+
+[33mcommit d632547a652c695332eb0e73cb3bd27c463124d5[m
+Author: Md Masthan <mdmastan633@gmail.com>
+Date:   Sun Oct 4 21:48:42 2026 +0530
+
+    Added Valid Parenthesis String  code
+
+[33mcommit bfb96cd85d05d8185ea6a04349ac1b1e2ad6c24d[m
+Author: Md Masthan <mdmastan633@gmail.com>
+Date:   Sat Oct 3 22:01:47 2026 +0530
+
+    Added Number of visible people in a queue code
+
+[33mcommit 87402df2c007f1408614237201bcf1ab0fd8919b[m
+Author: Md Masthan <mdmastan633@gmail.com>
+Date:   Sat Oct 3 21:59:53 2026 +0530
+
+    Added longest valid parentheses code
+
+[33mcommit 125d95f017b5a18cba2c39fc969566a318c231c4[m
+Author: Md Masthan <mdmastan633@gmail.com>
+Date:   Fri Oct 2 22:19:52 2026 +0530
+
+    Added Generate parentheses code
+
+[33mcommit 50ebf7e5ed412550aac37c74e8e23aee3c10aaf4[m
+Author: Md Masthan <mdmastan633@gmail.com>
+Date:   Fri Oct 2 22:19:11 2026 +0530
+
+    Added Generate parentheses code
+
+[33mcommit 86e89dfa94205fe6131963744444f7c3a6ca2e11[m
+Author: Md Masthan <mdmastan633@gmail.com>
+Date:   Thu Oct 1 19:40:53 2026 +0530
+
+    Added Sum of subarray minimums code
+
+[33mcommit a293b7d40de759549782545691cb9ba802b71c05[m
+Author: Md Masthan <mdmastan633@gmail.com>
+Date:   Thu Oct 1 19:39:19 2026 +0530
+
+    Added Sum of subarray minimums code
+
+[33mcommit 4f689a270bc839337c41f012329754a7d2c5092a[m
+Author: Md Masthan <mdmastan633@gmail.com>
+Date:   Wed Sep 30 22:11:12 2026 +0530
+
+    Added Max Nesting Depth of parentheses code
+
+[33mcommit 1ed4229f09dc0f54accce20edf73bcbcd1a00c1e[m
+Author: Md Masthan <mdmastan633@gmail.com>
+Date:   Wed Sep 30 22:08:53 2026 +0530
+
+    Added Max width ramp code
+
+[33mcommit e5dda1d54921c30d8372f8fd2a40a3469ec8c143[m
+Author: Md Masthan <mdmastan633@gmail.com>
+Date:   Tue Sep 29 21:58:17 2026 +0530
+
+    Added Check if there is a valid parentheses string path code
+
+[33mcommit 1ade28a63b8e3f1318972f3b1d3f625363380680[m
+A
