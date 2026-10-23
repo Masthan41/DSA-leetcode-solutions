@@ -6,8 +6,9 @@ Time Complexity: O(n) for computing prefix maximums, suffix minimums, and the fi
 Space Complexity: O(n) for storing the prefix maximums, suffix minimums, and the result array.
 */
 
+import java.util.*;
 
-class LC3660_JumpingGameIX{
+class LC3660_JumpingGameIX {
     public int[] maxValue(int[] nums) {
         int n = nums.length;
 
@@ -17,11 +18,11 @@ class LC3660_JumpingGameIX{
         maxLeft[0] = nums[0];
         minRight[n - 1] = nums[n - 1];
 
-        for(int i = 1; i < n; i++) {
+        for (int i = 1; i < n; i++) {
             maxLeft[i] = Math.max(nums[i], maxLeft[i - 1]);
         }
 
-        for(int i = n - 2; i >= 0; i--) {
+        for (int i = n - 2; i >= 0; i--) {
             minRight[i] = Math.min(nums[i], minRight[i + 1]);
         }
 
@@ -29,8 +30,8 @@ class LC3660_JumpingGameIX{
 
         result[n - 1] = maxLeft[n - 1];
 
-        for(int i = n - 2; i >= 0; i--) {
-            if(maxLeft[i] <= minRight[i + 1]) { // can't go to right at all
+        for (int i = n - 2; i >= 0; i--) {
+            if (maxLeft[i] <= minRight[i + 1]) { // can't go to right at all
                 result[i] = maxLeft[i];
             } else {
                 result[i] = result[i + 1];
@@ -39,9 +40,10 @@ class LC3660_JumpingGameIX{
 
         return result;
     }
+
     public static void main(String[] args) {
         LC3660_JumpingGameIX solution = new LC3660_JumpingGameIX();
-        int[] nums = {5, 2, 3, 1, 4};
+        int[] nums = { 5, 2, 3, 1, 4 };
         int[] result = solution.maxValue(nums);
         System.out.println(Arrays.toString(result));
     }
