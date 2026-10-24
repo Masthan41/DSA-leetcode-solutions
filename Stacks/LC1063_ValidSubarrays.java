@@ -13,15 +13,15 @@ class LC1063_ValidSubarrays {
         int sub = 0;
         Stack<Integer> s = new Stack<>();
 
-        for(int i=0;i<n;i++){
-            while(!s.isEmpty()&&nums[s.peek()]>nums[i]){
-                sub+=i-s.pop();
+        for (int i = 0; i < n; i++) {
+            while (!s.isEmpty() && nums[s.peek()] > nums[i]) {
+                sub += i - s.pop();
             }
             s.push(i);
         }
 
-        while(!s.isEmpty()){
-            sub+=n-s.pop();
+        while (!s.isEmpty()) {
+            sub += n - s.pop();
         }
         return sub;
     }
