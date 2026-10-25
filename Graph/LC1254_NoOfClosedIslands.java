@@ -1,3 +1,10 @@
+/*
+LeetCode 1254 - Number of Closed Islands
+Approach: Depth-First Search (DFS)
+Time complexity: O(M * N) where M is the number of rows and N is the number of columns
+Space complexity: O(M * N) where M is the number of rows and N is the number of columns
+*/
+
 class LC1254_NoOfClosedIslands {
     private int m, n;
 
@@ -38,7 +45,6 @@ class LC1254_NoOfClosedIslands {
                 }
             }
         }
-
         return count;
     }
 
