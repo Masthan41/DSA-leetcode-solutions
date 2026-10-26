@@ -6,20 +6,20 @@ Time Complexity: O(m*n) - we visit each cell at most once.
 Space Complexity: O(m*n) - for the visited array and the recursion stack in the worst case.
 */
 
-
 import java.util.*;
 
+class LC1391_FindValidPath {
     int m, n;
 
     Map<Integer, int[][]> directions = new HashMap<>();
 
-    public Solution() {
-        directions.put(1, new int[][]{{0, -1}, {0, 1}});
-        directions.put(2, new int[][]{{-1, 0}, {1, 0}});
-        directions.put(3, new int[][]{{0, -1}, {1, 0}});
-        directions.put(4, new int[][]{{0, 1}, {1, 0}});
-        directions.put(5, new int[][]{{0, -1}, {-1, 0}});
-        directions.put(6, new int[][]{{-1, 0}, {0, 1}});
+    public LC1391_FindValidPath() {
+        directions.put(1, new int[][] { { 0, -1 }, { 0, 1 } });
+        directions.put(2, new int[][] { { -1, 0 }, { 1, 0 } });
+        directions.put(3, new int[][] { { 0, -1 }, { 1, 0 } });
+        directions.put(4, new int[][] { { 0, 1 }, { 1, 0 } });
+        directions.put(5, new int[][] { { 0, -1 }, { -1, 0 } });
+        directions.put(6, new int[][] { { -1, 0 }, { 0, 1 } });
     }
 
     public boolean dfs(int[][] grid, int i, int j, boolean[][] visited) {
