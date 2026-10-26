@@ -1,9 +1,11 @@
+
 /*
 LeetCode 1301 - Number of Paths with Max Score
 Approach: Use dynamic programming to find the maximum score and count of paths.
 Time Complexity: O(m*n) where m is the number of rows and n is the number of columns in the board
 Space Complexity: O(m*n) for the DP tables
 */
+import java.util.*;
 
 class LC1301_NoOfPaths {
     int n;
