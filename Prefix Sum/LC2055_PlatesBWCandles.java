@@ -7,6 +7,8 @@ Time Complexity: O(n + q) - preprocess the string once and answer each query in 
 Space Complexity: O(n) - for prefix sum and candle position arrays.
 */
 
+import java.util.Arrays;
+
 class LC2055_PlatesBWCandles {
     public int[] platesBetweenCandles(String s, int[][] queries) {
         int n = s.length();
