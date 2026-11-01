@@ -2,7 +2,7 @@
 LeetCode 2462 - Total Cost to Hire K Workers
 Approach: Use two priority queues to maintain the minimum costs from both ends of the array. At each step, hire the worker with the lowest cost from either end, and refill the priority queues as needed.
 
-Time complexity: O(k log candidates) where k is the number of workers to hire and candidates is the number of candidates considered from each end. Each insertion and removal from the priority queue takes O(log candidates), and we perform this operation k times.
+Time complexity: O(k log candidates) where k is the number of workers to hire and candidates is the number of candidates considered from each end. Each insertion and removal from the priority queue takes O(log candidates), and we perform this operation k times. 
 Space complexity: O(candidates) for the two priority queues.
 */
 

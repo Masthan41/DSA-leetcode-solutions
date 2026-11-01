@@ -9,7 +9,7 @@ Space Complexity: O(n)
 
 import java.util.*;
 
-class LC239_SlidingWindowMax_Heap {
+class LC239_SlidingWindowMaximum {
     static class Pair {
         int val;
         int idx;
@@ -42,7 +42,7 @@ class LC239_SlidingWindowMax_Heap {
     }
 
     public static void main(String[] args) {
-        LC239_SlidingWindowMax_Heap obj = new LC239_SlidingWindowMax_Heap();
+        LC239_SlidingWindowMaximum obj = new LC239_SlidingWindowMaximum();
         int nums[] = { 1, 3, -1, -3, 5, 3, 6, 7 };
         int k = 3;
         int res[] = obj.maxSlidingWindow(nums, k);
