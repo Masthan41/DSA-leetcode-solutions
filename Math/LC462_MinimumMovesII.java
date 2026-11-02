@@ -6,7 +6,7 @@ Time Complexity: O(N log N) where N is the number of elements in the array, as w
 Space Complexity: O(1) as we are using a constant amount of extra space for variables.
 */
 
-import java.util.Arrays;
+import java.util.*;
 
 class LC462_MinimumMovesII {
     public int minMoves2(int[] nums) {
