@@ -1,5 +1,12 @@
-import java.util.Arrays;
-import java.util.TreeMap;
+/*
+LeetCode 3505 - Minimum Operations to Make K Subarrays Equal
+Approach: Use a sliding window to calculate the minimum operations required to make all elements of each subarray of size x equal. Store these results in an array. Then, use dynamic programming with memoization to find the minimum total operations required to select k non-overlapping subarrays.
+
+Time Complexity: O(n log x) for calculating the minimum operations for each subarray of size x using a balanced binary search tree (TreeMap). The dynamic programming part takes O(k * n) time, where k is the number of subarrays to select and n is the length of the input array.
+Space Complexity: O(n + k * n) for storing the minimum operations for each subarray and the memoization table.
+*/
+
+import java.util.*;
 
 class LC3505_MinimumOpeartions {
     int n, x, k;
