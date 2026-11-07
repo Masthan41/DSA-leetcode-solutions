@@ -1,3 +1,4 @@
+
 /* 
 LeetCode 2196 - Construct Binary Tree From Descriptions
 Approach: Use a HashMap to store the nodes and a HashSet to track child nodes. For each description, create or retrieve the parent and child nodes, and set the left or right child accordingly. Finally, identify the root node as the one that is not a child of any other node.
@@ -5,8 +6,9 @@ Approach: Use a HashMap to store the nodes and a HashSet to track child nodes. F
 Time Complexity: O(n) where n is the number of descriptions
 Space Complexity: O(n) for the HashMap and HashSet
 */
+import java.util.*;
 
-class LC2196_ConstructBinaryTree{
+class LC2196_ConstructBinaryTree {
     public TreeNode createBinaryTree(int[][] descriptions) {
         Map<Integer, TreeNode> mp = new HashMap<>();
         Set<Integer> childSet = new HashSet<>();
@@ -38,15 +40,16 @@ class LC2196_ConstructBinaryTree{
         }
         return null;
     }
-    public static void main(String[] args){
+
+    public static void main(String[] args) {
         LC2196_ConstructBinaryTree obj = new LC2196_ConstructBinaryTree();
-        int[][] descriptions = {{1, 2, 1}, {1, 3, 0}, {2, 4, 1}};
+        int[][] descriptions = { { 1, 2, 1 }, { 1, 3, 0 }, { 2, 4, 1 } };
         TreeNode root = obj.createBinaryTree(descriptions);
         // The tree structure will be:
-        //     1
-        //    / \
-        //   2   3
-        //  /
+        // 1
+        // / \
+        // 2 3
+        // /
         // 4
     }
 }
