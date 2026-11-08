@@ -1,4 +1,11 @@
-import java.util.Arrays;
+/*
+LeetCode 1267 - Count Servers that Can Communicate
+Approach: Count the number of servers in each row and column, and then count the servers that have at least one other server in the same row or column
+Time Complexity: O(m*n) where m is the number of rows and n is the number of columns in the grid
+Space Complexity: O(m+n) for the row and column server counts
+*/
+
+import java.util.*;
 
 class LC1267_CountServers {
     public int countServers(int[][] grid) {
