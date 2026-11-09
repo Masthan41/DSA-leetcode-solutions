@@ -1,4 +1,10 @@
+/*
+LeetCode 1606 - Find Servers That Handled Most Number of Requests
+Approach: We use a TreeSet to keep track of available servers and a priority queue to keep track of busy servers. For each request, we first check if any busy servers have become available by comparing the current time with the end time of the requests in the priority queue. If a server is available, we assign the request to it and update its end time in the priority queue. We also keep track of the number of requests handled by each server and return the servers that handled the maximum number of requests.
 
+Time Complexity: O(n log k) for processing the requests, where n is the number of requests and k is the number of servers. The log k factor comes from the operations on the TreeSet and priority queue.
+Space Complexity: O(k) for the TreeSet and priority queue that store the available and busy servers, respectively.
+*/
 
 import java.util.*;
 
