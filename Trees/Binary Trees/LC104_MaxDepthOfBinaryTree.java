@@ -3,8 +3,10 @@ LeetCode 104 - Maximum Depth of Binary Tree
 Approach: Use Breadth-First Search (BFS) to traverse the binary tree level by level. We maintain a queue to keep track of the nodes at the current level. For each level, we increment the depth counter and add the child nodes of the current level's nodes to the queue for processing in the next iteration.
 
 Time Complexity: O(n) as we visit each node exactly once, where n is the number of nodes in the binary tree.
-Space Complexity: O(h) where h is the height of the binary tree, which is the maximum number of nodes that can be stored in the queue at any time (in the worst case, this can be equal to the height of the tree).
+Space Complexity: O(w) where w is the maximum width of the binary tree, which is the maximum number of nodes that can be stored in the queue at any time (in the worst case, this can be equal to the maximum number of nodes at any level of the tree).
 */
+
+//Although it can be solved using DFS, BFS is more efficient in this case as it finds the maximum depth without traversing the entire tree.
 
 import java.util.*;
 
