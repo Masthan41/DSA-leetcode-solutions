@@ -5,7 +5,6 @@ Time Complexity: O(n) as we traverse the linked list a few times (finding the mi
 Space Complexity: O(1) for the pointers used in reversing the second half.
 */
 
-import java.util.*;
 
 class ListNode {
     int val;
