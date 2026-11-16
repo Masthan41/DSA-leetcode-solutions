@@ -1,8 +1,8 @@
 /*
 LeetCode 404 - Sum of Left Leaves
-Approach: DFS Recursion
-Time Complexity: O(n)
-Space Complexity: O(h)
+Approach: Use DFS based recursion to traverse the tree and check if a node is a left leaf. If it is, add its value to the sum.
+Time Complexity: O(n) as we visit each node once
+Space Complexity: O(h) as the recursion stack can go as deep as the height of the tree
 */
 
 class LC404_SumOfLeftLeaves {
