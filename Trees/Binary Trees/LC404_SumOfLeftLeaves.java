@@ -6,26 +6,27 @@ Space Complexity: O(h)
 */
 
 class LC404_SumOfLeftLeaves {
-    public int sumOfLeftLeaves(TreeNode root) {
+    public int findSum(TreeNode curr, TreeNode parent) {
 
-        if (root == null) {
+        if (curr == null) {
             return 0;
         }
-        int sum = 0;
-        // check if left child is a leaf
-        if (root.left != null &&
-                root.left.left == null &&
-                root.left.right == null) {
 
-            sum += root.left.val;
+        if (curr.left == null && curr.right == null) {
+            if (parent != null && parent.left == curr) {
+                return curr.val;
+            }
         }
+        int left = findSum(curr.left, curr);
+        int right = findSum(curr.right, curr);
 
-        // recurse on left and right subtree
-        sum += sumOfLeftLeaves(root.left);
-        sum += sumOfLeftLeaves(root.right);
-
-        return sum;
+        return left + right;
     }
+
+    public int sumOfLeftLeaves(TreeNode root) {
+        return findSum(root, null);
+    }
+
     public static void main(String[] args) {
         LC404_SumOfLeftLeaves solution = new LC404_SumOfLeftLeaves();
 
