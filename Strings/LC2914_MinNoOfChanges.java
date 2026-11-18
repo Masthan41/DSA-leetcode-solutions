@@ -1,6 +1,7 @@
 /*
 LeetCode 2914 - Minimum Number of Changes to Make Binary String beautiful
 Approach: We iterate through the string and count consecutive characters. If we encounter a different character, we check if the count of the previous character is even or odd. If it's odd, we need to make a change to ensure that no two adjacent characters are the same. We keep track of the number of changes needed.
+
 Time Complexity: O(n) because we iterate through the string once
 Space Complexity: O(1) because we use a constant amount of space for variables
 */
@@ -28,7 +29,6 @@ class LC2914_MinNoOfChanges {
         }
         return changes;
     }
-
 
     public static void main(String[] args) {
         LC2914_MinNoOfChanges solution = new LC2914_MinNoOfChanges();
