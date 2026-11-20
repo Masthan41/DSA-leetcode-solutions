@@ -1,32 +1,44 @@
 /*
 LeetCode 437 - Path Sum III
-Approach: Use DFS based recursion to traverse the tree and check for paths that sum up to the target value. For each node, we check if the current path sum equals the target sum and recursively check its left and right children.
-Time Complexity: O(n^2) in the worst case for a skewed tree, as we may visit each node and for each node, we may traverse all its descendants.
-Space Complexity: O(h) as the recursion stack can go as deep as the height of the tree.
+Approach: Use DFS with a HashMap to store the cumulative sum and its frequency. For each node, we calculate the cumulative sum and check if there exists a previous cumulative sum that, when subtracted from the current cumulative sum, equals the target sum. If such a previous cumulative sum exists, we add its frequency to the total count of paths. We then recursively call the function for the left and right children of the current node.
+
+Time Complexity: O(n) where n is the number of nodes in the tree, as we visit each node once.
+Space Complexity: O(h) where h is the height of the tree, as the HashMap can store at most h elements at any time.
 */
 
+import java.util.*;
+
 class LC437_PathSumIII {
-    public int findSum(TreeNode root, long targetSum) {
+    long total = 0;
+
+    public void findSum(TreeNode root, long sum, long target, Map<Long, Long> map) {
         if (root == null) {
-            return 0;
+            return;
         }
 
-        long res = 0;
-        if (root.val == targetSum) {
-            res++;
+        sum += root.val;
+        if (map.containsKey(sum - target)) {
+            total += map.get(sum - target);
         }
 
-        res += findSum(root.left, targetSum - root.val);
-        res += findSum(root.right, targetSum - root.val);
+        map.put(sum, map.getOrDefault(sum, 0L) + 1);
+        findSum(root.left, sum, target, map);
+        findSum(root.right, sum, target, map);
+        map.put(sum, map.get(sum) - 1);
 
-        return (int) res;
+        return;
     }
 
     public int pathSum(TreeNode root, int targetSum) {
         if (root == null) {
             return 0;
         }
-        return findSum(root, targetSum) + pathSum(root.left, targetSum) + pathSum(root.right, targetSum);
+
+        Map<Long, Long> map = new HashMap<>();
+        map.put(0L, 1L);
+
+        findSum(root, 0, targetSum, map);
+        return (int) total;
     }
 
     public static void main(String[] args) {
