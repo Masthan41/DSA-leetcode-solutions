@@ -1,11 +1,17 @@
-import java.util.ArrayList;
-import java.util.List;
+/*
+LeetCode 1352 - Product of the Last K Numbers
+Approach: Use a prefix product array to efficiently calculate the product of the last k numbers. When a new number is added, we update the prefix product array. To get the product of the last k numbers, we divide the current prefix product by the prefix product k positions back.
+Time Complexity: O(1) for each add and getProduct operation.
+Space Complexity: O(n) where n is the number of elements added, as we store a prefix product for each element.
+*/
 
-class LC1352ProductOfKNumbers {
+import java.util.*;
+
+class LC1352_ProductOfKNumbers {
     private List<Integer> nums;
     private int n;
 
-    public LC1352ProductOfKNumbers() {
+    public LC1352_ProductOfKNumbers() {
         nums = new ArrayList<>();
         n = 0;
     }
@@ -35,7 +41,7 @@ class LC1352ProductOfKNumbers {
     }
 
     public static void main(String[] args) {
-        LC1352ProductOfKNumbers productOfNumbers = new LC1352ProductOfKNumbers();
+        LC1352_ProductOfKNumbers productOfNumbers = new LC1352_ProductOfKNumbers();
         productOfNumbers.add(3); // [3]
         productOfNumbers.add(0); // [3, 0]
         productOfNumbers.add(2); // [3, 0, 2]

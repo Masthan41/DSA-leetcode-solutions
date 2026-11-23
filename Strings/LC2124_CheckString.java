@@ -22,6 +22,6 @@ class LC2124_CheckString {
         LC2124_CheckString solution = new LC2124_CheckString();
         String s = "aaabbb";
         boolean result = solution.checkString(s);
-        System.out.println("Is the string valid ? " + result);
+        System.out.println("Is the string valid? " + result);
     }
 }
