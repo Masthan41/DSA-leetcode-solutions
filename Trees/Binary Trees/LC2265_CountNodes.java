@@ -6,9 +6,6 @@ Time Complexity: O(n) where n is the number of nodes in the tree, as we visit ea
 Space Complexity: O(h) where h is the height of the tree, due to the recursion stack.
 */
 
-import javax.swing.tree.TreeNode;
-import java.util.*;
-
 class LC2265_CountNodes {
     private int result;
 
